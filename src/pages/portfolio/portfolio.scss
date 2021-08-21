@@ -1,0 +1,85 @@
+@import "../../styles.scss";
+
+.portfolioContainer {
+  overflow: initial;	
+}
+
+.portfolioContent {
+  padding: 0 1.5rem;
+}
+
+.portfolioImg {
+  width: 300px;
+  border-radius: 0.7rem;
+  justify-self: center;
+  object-fit: cover;
+}
+
+.portfolioTitle {
+  font-size: $h3FontSize;
+  margin: 5px 0;
+  color: $titleColor;
+}
+
+.portfolioSubtitle {
+  font-size: $smallFontSize;
+  font-weight: $fontMedium;
+  margin-bottom: $mb05;
+}
+
+.portfolioDesc {
+  margin-bottom: $mb075;
+}
+
+.portfolioButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  width: 100px;
+  background-color: $firstColor;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: all 1s ease;
+	margin-bottom: 2.5rem;
+
+  .btnIcon {
+    margin-left: 4px;
+  }
+
+  &:hover {
+    background-color: rgb(90, 0, 134);
+    box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover > .btnIcon {
+    transform: translateX(0.5rem);
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-pagination-button {
+	bottom: -5.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $firstColor !important;
+}
+
+.swiper-slide .portfolioContent {
+  display: block;
+  width: 100%;
+}

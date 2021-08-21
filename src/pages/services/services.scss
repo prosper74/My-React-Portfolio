@@ -1,0 +1,119 @@
+@import "../../styles.scss";
+
+.serviesContainer {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.servicesContent {
+  position: relative;
+  background-color: $containerColor;
+  padding: 2.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.ServicesIcon {
+  display: block;
+  font-size: 1.5rem;
+  color: $firstColor;
+  margin-bottom: $mb1;
+}
+
+.ServicesTitle {
+  font-size: $h3FontSize;
+  margin-bottom: $mb1;
+  font-weight: $fontMedium;
+
+  span {
+    font-size: $smallFontSize;
+  }
+}
+
+.viewMoreBtn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: $textColor;
+  transition: 0.5s;
+  font-size: $smallFontSize;
+  cursor: pointer;
+
+  .viewMoreIcon {
+    margin-left: 4px;
+  }
+
+  &:hover {
+    color: rgb(90, 0, 134);
+  }
+
+  &:hover .viewMoreIcon {
+    transform: translateX(0.25rem);
+  }
+}
+
+.servicesModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: $zIndexModal;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.servicesModalContent {
+	position: relative;
+	background-color: $containerColor;
+	padding: 2rem 1.5rem;
+	border-radius: 0.5rem;
+}
+
+.modalServices {
+	row-gap: 1rem;
+}
+
+.modalService {
+	display: flex;
+}
+
+.modalTitle {
+	font-size: $h3FontSize;
+	font-weight: $fontMedium;
+	margin-bottom: $mb15;
+
+	span {
+		font-size: $smallFontSize;
+	}
+}
+
+.modalCLoseIcon {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	color: $firstColor;
+	cursor: pointer;
+}
+
+.modalServiceIcon {
+	color: $firstColor;
+	margin-right: $mb025;
+}
+
+.activeModal {
+	opacity: 1;
+	visibility: visible;
+}

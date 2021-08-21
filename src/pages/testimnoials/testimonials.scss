@@ -1,0 +1,78 @@
+@import "../../styles.scss";
+
+.testimonialData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly !important;
+  margin-bottom: $mb1;
+}
+
+.testimonialHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $mb075;
+}
+
+.testImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: $mb075;
+  object-fit: cover;
+}
+
+.nameSection {
+  margin-bottom: 1rem;
+}
+
+.testimonialName {
+  font-size: $h3FontSize;
+  font-weight: $fontMedium;
+}
+
+.testimonialBusiness {
+  font-size: $smallFontSize;
+  color: $textColorLight;
+}
+
+.testimonialDesc {
+  margin-bottom: $mb25 !important;
+}
+
+.starIcon {
+  color: $firstColor;
+}
+
+.testimonials {
+	overflow: hidden;
+  .swiper-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;		
+
+    .swiper-slide {
+      font-size: 18px;
+      background: #fff;
+      margin: 1rem 0 2rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+      height: 270px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      /* -webkit-justify-content: center; */
+      /* justify-content: center; */
+      /* -webkit-box-align: center; */
+      /* -ms-flex-align: center; */
+      /* -webkit-align-items: center; */
+      /* align-items: center; */
+    }
+  }
+}

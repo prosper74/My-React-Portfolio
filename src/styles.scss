@@ -1,0 +1,137 @@
+/* CSS VARIABLES */
+
+$headerHeight: 3rem;
+
+/* Colors */
+
+/* --first-color: hsl(var(--hue-color), 69%, 61%); */
+$firstColor: #9932cc;
+$secondColor: hsl(var(--hue-color), 69%, 61%);
+$firstColorAlt: hsl(var(--hue-color), 57%, 53%);
+$firstColorLighter: rgb(194, 194, 194);
+$titleColor: rgb(77, 77, 77);
+$textColor: rgb(116, 116, 116);
+$textColorLight: rgb(153, 153, 153);
+$inputColor: rgb(238, 238, 238);
+$bodyColor: rgb(253, 245, 255);
+
+/* --body-color: hsl(var(--hue-color), 60%, 99%); */
+$containerColor: white;
+
+/* Fonts and Typography */
+$bigFontSize: 2rem;
+$h1FontSize: 1.5rem;
+$h2FontSize: 1.25rem;
+$h3FontSize: 1.1rem;
+$normalFontSize: 1rem;
+$smallFontSize: 0.9rem;
+$smallerFontSize: 0.85rem;
+
+/* Font Weight */
+$fontMedium: 500;
+$fontSemiBold: 700;
+
+/* Margins Bottom */
+$mb025: 0.25rem;
+$mb05: 0.5rem;
+$mb075: 0.75rem;
+$mb1: 1rem;
+$mb15: 1.5rem;
+$mb2: 2rem;
+$mb25: 2.5rem;
+$mb3: 3rem;
+
+/* Z-Index */
+$zIndex: 10;
+$zIndexFixed: 100;
+$zIndexModal: 1000;
+
+@media screen and (min-width: 968px) {  
+  $bigFontSize: 3rem;
+  $h1FontSize: 2.5rem;
+  $h2FontSize: 1.5rem;
+  $h3FontSize: 1.25rem;
+  $normalFontSize: 1rem;
+  $smallFontSize: 0.875rem;
+  $smallerFontSize: 0.813rem;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 $headerHeight 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $normalFontSize;
+  background-color: $bodyColor;
+  color: $textColor;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Heading Elements */
+h1,
+h2,
+h3,
+h4 {
+  color: $titleColor;
+  font-weight: $fontSemiBold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reusable CSS classes */
+.section {
+  padding: 2rem 0 3rem;
+}
+
+.sectionTitle {
+  font-size: $h1FontSize;
+}
+
+.sectionSubtitle {
+  display: block;
+  font-size: $smallFontSize;
+  margin-bottom: $mb2;
+}
+
+.sectionTitle,
+.sectionSubtitle {
+  text-align: center;
+}
+
+/* Layout */
+.container {
+  max-width: 768px;
+  margin-left: $mb15;
+  margin-right: $mb15;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}

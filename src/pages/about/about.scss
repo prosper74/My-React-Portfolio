@@ -1,0 +1,69 @@
+@import "../../styles.scss";
+
+// .aboutImg {
+//   justify-self: center;
+//   align-self: center;
+// }
+
+.aboutDescription {
+  margin-bottom: $mb075;
+  transition: all 20.9s ease;
+
+  .readMore {
+    color: $firstColor;
+    cursor: pointer;
+    transition: all 20.9s ease;
+  }
+
+  .more {
+    transition:.5s;
+  }
+}
+
+.aboutInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: $mb1;
+}
+
+.aboutInfoTitle {
+  font-size: $h2FontSize;
+  font-weight: $fontSemiBold;
+  color: $titleColor;
+}
+
+.aboutInfoTitle, 
+.aboutInfoName {
+display: block;
+text-align: center;
+align-items: center;
+}
+
+.aboutInfoName {
+  font-size: $smallerFontSize;
+}
+
+.aboutButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  // justify-content: center;
+  width: 180px;
+  background-color: $firstColor;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 1s;
+  margin: 0 auto;
+
+  .downloadIcon {
+    margin-left: 4px;
+  }
+
+  &:hover {
+    background-color: rgb(90, 0, 134);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  }
+}

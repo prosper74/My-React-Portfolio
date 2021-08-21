@@ -1,0 +1,85 @@
+@import "../../styles.scss";
+
+.quaTab {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: $mb2;
+}
+
+.quaButton {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;    
+    cursor: pointer;
+
+    &:hover {
+        color: $firstColor;
+    }
+
+		&.active {
+			color: $firstColor;
+		}
+
+    .quaIcon {
+        margin-right: $mb025;
+    }
+}
+
+.quaData {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+
+    .quaTitle {
+        font-size: $normalFontSize;
+        font-weight: $fontMedium;
+        margin-bottom: 0.2rem;
+    }
+
+    .quaSubtitle {
+        display: inline-block;
+        font-weight: $smallFontSize;
+        margin-bottom: $mb1;
+    }
+
+    .quaCalendar {
+        font-size: $smallerFontSize;
+				color: $textColorLight;
+				display: flex;
+				align-items: center;
+
+				.calIcon {
+					margin-right: 0.2rem;
+				}
+    }
+
+		.quaRounder {
+			display: inline-block;
+			width: 13px;
+			height: 13px;
+			background-color: $firstColor;
+			border-radius: 50%;
+		}
+
+		.quaLine {
+			display: block;
+			width: 1px;
+			height: 100%;
+			background-color: $firstColor;
+			transform: translate(6px, -7px);
+		}
+}
+
+.quaClose {
+		height: 0;
+		overflow: hidden;
+		transition: 1s;
+}
+
+.quaOpen {
+		height: max-content;
+		margin-bottom: $mb1;
+		transition: 1s;
+}

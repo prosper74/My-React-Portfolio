@@ -1,0 +1,94 @@
+@import "../../styles.scss";
+
+.home__container {
+  gap: 1rem;
+}
+
+.home__content {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 1.5rem;
+  align-items: center;
+}
+
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home__social__icon {
+  font-size: 1.25rem;
+  color: $firstColor;  
+}
+
+.home__social__icon:hover {
+  font-size: 1.25rem;
+  color: $firstColorAlt;
+}
+
+.home__blob {
+  width: 300px;
+}
+
+.home__data {
+grid-column: 1/3;
+
+h3 {
+  span {
+    color: $firstColor;
+  }
+}
+
+  .myButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    width: 130px;
+    background-color: $firstColor;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 1s;
+
+    .contactIcon {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      background-color: rgb(90, 0, 134);
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.home__title {
+  font-size: $bigFontSize;
+  color: $titleColor;
+}
+
+.home__subtitle {
+  font-size: $h3FontSize;
+  color: $textColor;
+  font-weight: $fontMedium;
+  margin-bottom: $mb075;
+}
+
+.description {
+  margin-bottom: $mb2;
+}
+
+.home__scroll {
+  margin-top: 5%;
+  color: $firstColor;
+  transition: 0.5s;
+
+  .home__scroll__arrow {
+    color: $firstColor;
+    transition: 0.5s;
+
+    &:hover {
+      transform: translateY(0.25rem);
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../styles.scss";
+
+.contactContainer {
+  row-gap: 3rem;
+}
+
+.contactInfo {
+  display: flex;
+}
+
+.phoneIcon {
+  color: $firstColor;
+  margin-right: $mb075;
+}
+
+.contactTitle {
+  font-size: $h3FontSize;
+  font-weight: $fontMedium;
+}
+
+.contactDesc {
+  font-size: $smallFontSize;
+  color: $textColorLight;
+}
+
+.contactForm {
+  .contactContent {
+    background-color: $inputColor;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+  }
+
+  .contactLabel {
+		font-size: $smallerFontSize;
+		color: $titleColor;
+  }
+
+	input, textarea {
+		width: 100%;
+		background-color: $inputColor;
+		color: $textColor;
+		font-size: $normalFontSize;
+		border: none;
+		outline: none;
+		padding: .5rem;
+	}
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    width: 160px;
+    background-color: $firstColor;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    border: none;
+
+    .messageIcon {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      background-color: rgb(90, 0, 134);
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover > .messageIcon {
+      transform: translateX(0.5rem);
+    }
+  }
+}
