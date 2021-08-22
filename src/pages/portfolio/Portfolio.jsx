@@ -42,9 +42,9 @@ function Portfolio() {
             }}
             className="mySwiper"
           >
-            {data.map((d, i) => (
+            {data.map((d) => (
               <SwiperSlide>
-                <div className="portfolioContent grid" key={i}>
+                <div className="portfolioContent grid" key={d.id}>
                   <div>
                     <img src={d.img} alt="" className="portfolioImg" />
 

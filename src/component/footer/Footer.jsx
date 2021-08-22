@@ -5,28 +5,28 @@ import {
   UilAngleRight,
   UilTimes,
   UilCheckCircle,
-  UilBracketsCurly,
-  UilFileCheck,
-  UilHeartRate,
+	UilBracketsCurly,
+	UilFileCheck,
+	UilHeartRate
 } from "@iconscout/react-unicons";
 
 function Services() {
-  const [modalOne, setModalOne] = useState(false);
+	const [modalOne, setModalOne] = useState(false);
   const [modalTwo, setModalTwo] = useState(false);
   const [modalThree, setModalThree] = useState(false);
   const [modalFour, setModalFour] = useState(false);
 
-  const handleModal = () => {
-    modalOne === true && setModalOne(false);
-    modalTwo === true && setModalTwo(false);
-    modalThree === true && setModalThree(false);
-    modalFour === true && setModalFour(false);
-  };
+	const handleModal = () => {
+		modalOne === true && setModalOne(false);
+		modalTwo === true && setModalTwo(false);
+		modalThree === true && setModalThree(false);
+		modalFour === true && setModalFour(false);		
+	}
 
-  // onClick={() => setModalFour(false) }
+	// onClick={() => setModalFour(false) }
 
   return (
-    <section className="services section" id="services" onClick={handleModal}>
+    <section className="services section" id="services" onClick={handleModal} >
       <h2 className="sectionTitle">Services</h2>
       <span className="sectionSubtitle">What I can do for you</span>
 
@@ -46,19 +46,13 @@ function Services() {
             <UilAngleRight size="18" className="viewMoreIcon" />
           </span>
 
-          <div
-            className={modalOne ? "servicesModal activeModal" : "servicesModal"}
-          >
+          <div className={modalOne ? "servicesModal activeModal" : "servicesModal" }>
             <div className="servicesModalContent">
               <h4 className="modalTitle">
                 Web App <br />
                 <span>Project Planning</span>
               </h4>
-              <UilTimes
-                size="18"
-                className="modalCLoseIcon"
-                onClick={() => setModalOne(false)}
-              />
+              <UilTimes size="18" className="modalCLoseIcon" onClick={() => setModalOne(false)} />
 
               <ul className="modalServices grid">
                 <li className="modalService">
@@ -77,9 +71,9 @@ function Services() {
             </div>
           </div>
         </div>
-
-        {/* Service 2 */}
-        <div className="servicesContent">
+      
+				 {/* Service 2 */}
+				 <div className="servicesContent">
           <div>
             <UilBracketsCurly size="30" className="ServicesIcon" />
             <h3 className="ServicesTitle">
@@ -93,19 +87,13 @@ function Services() {
             <UilAngleRight size="18" className="viewMoreIcon" />
           </span>
 
-          <div
-            className={modalTwo ? "servicesModal activeModal" : "servicesModal"}
-          >
+          <div className={modalTwo ? "servicesModal activeModal" : "servicesModal" }>
             <div className="servicesModalContent">
               <h4 className="modalTitle">
-                Software Development/Deployment <br />
-                <span>Frontend and Backend</span>
+							Software Development/Deployment <br />
+              <span>Frontend and Backend</span>
               </h4>
-              <UilTimes
-                size="18"
-                className="modalCLoseIcon"
-                onClick={() => setModalTwo(false)}
-              />
+              <UilTimes size="18" className="modalCLoseIcon" onClick={() => setModalTwo(false)} />
 
               <ul className="modalServices grid">
                 <li className="modalService">
@@ -118,10 +106,9 @@ function Services() {
                 </li>
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create database models and routes (MongoDB, MySQL or
-                  PostgresSQL)
+                  create database models and routes (MongoDB, MySQL or PostgresSQL)
                 </li>
-                <li className="modalService">
+								<li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
                   create GraphQL and Rest APIs
                 </li>
@@ -129,9 +116,9 @@ function Services() {
             </div>
           </div>
         </div>
-
-        {/* Service 3 */}
-        <div className="servicesContent">
+      
+				{/* Service 3 */}
+				<div className="servicesContent">
           <div>
             <UilFileCheck size="30" className="ServicesIcon" />
             <h3 className="ServicesTitle">
@@ -140,47 +127,39 @@ function Services() {
             </h3>
           </div>
 
-          <span className="viewMoreBtn" onClick={() => setModalThree(true)}>
+          <span className="viewMoreBtn" onClick={() => setModalThree(true)} >
             View More
             <UilAngleRight size="18" className="viewMoreIcon" />
           </span>
 
-          <div
-            className={
-              modalThree ? "servicesModal activeModal" : "servicesModal"
-            }
-          >
+          <div className={ modalThree ? "servicesModal activeModal" : "servicesModal" }>
             <div className="servicesModalContent">
               <h4 className="modalTitle">
-                Software Testing <br />
-                <span>Frontend and Backend</span>
+							Software Testing <br />
+              <span>Frontend and Backend</span>
               </h4>
-              <UilTimes
-                size="18"
-                className="modalCLoseIcon"
-                onClick={() => setModalThree(false)}
-              />
+              <UilTimes size="18" className="modalCLoseIcon" onClick={() => setModalThree(false)} />
 
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I can
-                  run unix, Jest, E2E and cypress tests
+                  <UilCheckCircle size="18" className="modalServiceIcon" />I
+                  can run unix, Jest, E2E and cypress tests
                 </li>
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
                   create API documentation using Swagger
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I use
-                  eslint and pretier to create clean and maintainable codes
+                  <UilCheckCircle size="18" className="modalServiceIcon" />I
+                  use eslint and pretier to create clean and maintainable codes
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-        {/* Service 4 */}
-        <div className="servicesContent">
+      
+				{/* Service 4 */}
+				<div className="servicesContent">
           <div>
             <UilHeartRate size="30" className="ServicesIcon" />
             <h3 className="ServicesTitle">
@@ -194,40 +173,34 @@ function Services() {
             <UilAngleRight size="18" className="viewMoreIcon" />
           </span>
 
-          <div
-            className={
-              modalFour ? "servicesModal activeModal" : "servicesModal"
-            }
-          >
+          <div className={modalFour ? "servicesModal activeModal" : "servicesModal" }>
             <div className="servicesModalContent">
               <h4 className="modalTitle">
-                Software Maintenance <br />
-                <span>Version Control</span>
+							Software Maintenance <br />
+              <span>Version Control</span>
               </h4>
-              <UilTimes
-                size="18"
-                className="modalCLoseIcon"
-                onClick={() => setModalFour(false)}
-              />
+              <UilTimes size="18" className="modalCLoseIcon" onClick={() => setModalFour(false)} />
 
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I can
-                  run unix, Jest, E2E and cypress tests
+                  <UilCheckCircle size="18" className="modalServiceIcon" />I
+                  can run unix, Jest, E2E and cypress tests
                 </li>
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
                   create API documentation using Swagger
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="22" className="modalServiceIcon" />I use
-                  eslint and pretier to create clean and maintainable codes
+                  <UilCheckCircle size="22" className="modalServiceIcon" />I
+                  use eslint and pretier to create clean and maintainable codes
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
+      
+
+			</div>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .portfolioContainer {
-  overflow: initial;	
+  overflow: initial;
 }
 
 .portfolioContent {
@@ -42,7 +42,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   transition: all 1s ease;
-	margin-bottom: 2.5rem;
+  // margin-bottom: 2.5rem;
 
   .btnIcon {
     margin-left: 4px;
@@ -68,18 +68,20 @@
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px;
-}
-
-.swiper-pagination-button {
-	bottom: -5.5rem !important;
+  height: 450px !important;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: $firstColor !important;
+  background-color: $firstColor !important;
 }
 
 .swiper-slide .portfolioContent {
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .portfolioContent {
+    padding: 0;
+  }
 }
