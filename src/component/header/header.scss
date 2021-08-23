@@ -7,6 +7,9 @@
   left: 0;
   z-index: $zIndexFixed;
   background-color: $bodyColor;
+}
+
+.header.scroll {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -15,11 +18,11 @@
   height: $headerHeight;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 .nav__logo,
-.nav__toggle {
+.navToggle {
   color: $titleColor;
   font-weight: $fontMedium;
   font-size: 1rem;
@@ -29,13 +32,20 @@
   color: $firstColor;
 }
 
-.nav__toggle {
+.navToggle {
   font-size: 1.1rem;
-  cursor: pointer;
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
 }
 
-.nav__toggle:hover {
+.navToggleIcon:hover,
+.changeTheme:hover {
   color: $firstColor;
+}
+
+.changeTheme {
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -94,5 +104,3 @@
 .nav__close:hover {
   color: var(--first-color-alt);
 }
-
-/* Menu show Y hidden */

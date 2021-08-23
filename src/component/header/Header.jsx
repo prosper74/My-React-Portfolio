@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.scss";
 import {
   UilBriefcaseAlt,
@@ -8,13 +8,26 @@ import {
   UilFileInfoAlt,
   UilMessage,
   UilTimes,
-  UilApps
+  UilApps,
+  UilMoon,
 } from "@iconscout/react-unicons";
 
 function Header({ menuOpen, setMenuOpen }) {
+  const [scrollup, setScrollup] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 80) {
+      setScrollup(true);
+    } else {
+      setScrollup(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <>
-      <header className="header">
+      <header className={scrollup ? "header scroll" : "header"}>
         <nav className="nav container">
           <a href="#home" className="nav__logo">
             atuProsper.
@@ -65,11 +78,12 @@ function Header({ menuOpen, setMenuOpen }) {
 
           <div className="nav__btns">
             {!menuOpen && (
-              <div
-                className="nav__toggle"
-                onClick={() => setMenuOpen(!menuOpen)}
-              >
-                <UilApps />
+              <div className="navToggle">
+                <UilMoon className="changeTheme" />
+                <UilApps
+                  className="navToggleIcon"
+                  onClick={() => setMenuOpen(!menuOpen)}
+                />
               </div>
             )}
           </div>

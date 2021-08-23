@@ -31,7 +31,7 @@ function Skills() {
             <UilBracketsCurly size="30" className="skillsIcon" />
             <div>
               <h1 className="skillsTitle">Frontend Developer</h1>
-              <span className="skillsSubtitle">2+ years experience</span>
+              <span className="skillsSubtitle">9+ Months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -72,6 +72,15 @@ function Skills() {
                 </div>
               </div>
             </div>
+
+            <div className="skillsData">
+              <div className="skillsTitle">
+                <h3 className="skillName">Gatsby JS</h3>
+                <div className="skillBar">
+                  <span className="skillPerc skillGatsby"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -88,7 +97,7 @@ function Skills() {
             <UilServerNetworkAlt size="30" className="skillsIcon" />
             <div>
               <h1 className="skillsTitle">Backend Developer</h1>
-              <span className="skillsSubtitle">1+ year experience</span>
+              <span className="skillsSubtitle">7+ Months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -127,7 +136,7 @@ function Skills() {
             <UilDatabase size="30" className="skillsIcon" />
             <div>
               <h1 className="skillsTitle">Database</h1>
-              <span className="skillsSubtitle">1+ year experience</span>
+              <span className="skillsSubtitle">7+ months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>

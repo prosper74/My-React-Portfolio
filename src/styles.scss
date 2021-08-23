@@ -7,7 +7,7 @@ $headerHeight: 3rem;
 /* --first-color: hsl(var(--hue-color), 69%, 61%); */
 $firstColor: #9932cc;
 $secondColor: hsl(var(--hue-color), 69%, 61%);
-$firstColorAlt: hsl(var(--hue-color), 57%, 53%);
+$firstColorAlt: #c042ff;
 $firstColorLighter: rgb(194, 194, 194);
 $titleColor: rgb(77, 77, 77);
 $textColor: rgb(116, 116, 116);
@@ -46,7 +46,7 @@ $zIndex: 10;
 $zIndexFixed: 100;
 $zIndexModal: 1000;
 
-@media screen and (min-width: 968px) {  
+@media screen and (min-width: 968px) {
   $bigFontSize: 3rem;
   $h1FontSize: 2.5rem;
   $h2FontSize: 1.5rem;
