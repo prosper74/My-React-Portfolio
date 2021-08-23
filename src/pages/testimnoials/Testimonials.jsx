@@ -29,9 +29,9 @@ function Testimonials() {
           navigation={false}
           className="mySwiper"
         >
-          {data.map((d, i) => (
+          {data.map((d) => (
             <SwiperSlide>
-              <div className="testimonialContent" key={i}>
+              <div className="testimonialContent" key={d.id}>
                 <div className="testimonialData">
                   <div className="testimonialHeader">
                     <img src={d.img} alt="" className="testImg" />

@@ -29,6 +29,7 @@
 
 .portfolioDesc {
   margin-bottom: $mb075;
+  max-width: 300px;
 }
 
 .portfolioButton {
@@ -36,7 +37,7 @@
   align-items: center;
   justify-content: center;
   padding: 8px 10px;
-  width: 100px;
+  max-width: 110px;
   background-color: $firstColor;
   color: white;
   border-radius: 8px;
@@ -64,14 +65,14 @@
   padding-bottom: 50px;
 }
 
-.portfolioContainer > .swiper-slide {
+.portfolioContainer .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 450px !important;
 }
 
-.portfolioContainer > .swiper-pagination-bullet-active {
+.portfolioContainer .swiper-pagination-bullet-active {
   background-color: $firstColor !important;
 }
 
@@ -85,7 +86,7 @@
     padding: 0.75rem;
   }
 
-  .portfolioContainer > .swiper-slide {
+  .portfolioContainer .swiper-slide {
     width: 270px;
   }
 }

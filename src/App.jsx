@@ -8,6 +8,7 @@ import Qualifications from "./pages/qualifications/Qualifications";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Testimonials from "./pages/testimnoials/Testimonials";
 import Contact from "./pages/contact/Contact";
+import Footer from "./component/footer/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,11 +20,12 @@ function App() {
         <Home />
         <About />
         <Qualifications />
-        <Skills />        
+        <Skills />
         <Services />
         <Portfolio />
         <Testimonials />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

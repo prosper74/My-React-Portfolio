@@ -53,7 +53,7 @@ function Portfolio() {
                       <h4 className="portfolioSubtitle">{d.subtitle}</h4>
                       <p className="portfolioDesc">{d.desc}</p>
                       <a href="#" className="portfolioButton">
-                        Demo
+                        View
                         <UilExternalLinkAlt size="18" className="btnIcon" />
                       </a>
                     </div>

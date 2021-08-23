@@ -7,7 +7,7 @@ import {
   UilDatabase,
 } from "@iconscout/react-unicons";
 import { UisAngleDown } from "@iconscout/react-unicons-solid";
-import {otherSkils} from "./data";
+import { otherSkils } from "./data";
 
 function Skills() {
   const [toggle, setToggle] = useState(false);
@@ -181,10 +181,9 @@ function Skills() {
 
           <div className="skillsData">
             <div className="skillsList ">
-              {otherSkils.map((d, i) => (
-                <span key={i}>{d.name}</span>
+              {otherSkils.map((d) => (
+                <span key={d.id}>{d.name}</span>
               ))}
-              
             </div>
           </div>
         </div>
