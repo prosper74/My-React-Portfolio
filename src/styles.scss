@@ -130,6 +130,11 @@ img {
   text-align: center;
 }
 
+.sectionTitleDark,
+.sectionSubtitleDark {
+  color: $bodyColor;
+}
+
 /* Layout */
 .container {
   max-width: 768px;

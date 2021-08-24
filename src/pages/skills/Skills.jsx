@@ -9,7 +9,7 @@ import {
 import { UisAngleDown } from "@iconscout/react-unicons-solid";
 import { otherSkils } from "./data";
 
-function Skills() {
+function Skills({ themeIcon }) {
   const [toggle, setToggle] = useState(false);
   const [toggleTwo, setToggleTwo] = useState(false);
   const [toggleThree, setToggleThree] = useState(false);
@@ -17,7 +17,11 @@ function Skills() {
 
   return (
     <section className="skills section" id="skills">
-      <h2 className="sectionTitle">Skills</h2>
+      <h2
+        className={themeIcon ? "sectionTitle sectionTitleDark" : "sectionTitle"}
+      >
+        Skills
+      </h2>
       <span className="sectionSubtitle">My Technical Level</span>
 
       <div className="skillsContainer container grid">
@@ -30,7 +34,13 @@ function Skills() {
           <div className="skillsHeader" onClick={() => setToggle(!toggle)}>
             <UilBracketsCurly size="30" className="skillsIcon" />
             <div>
-              <h1 className="skillsTitle">Frontend Developer</h1>
+              <h1
+                className={
+                  themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
+                }
+              >
+                Frontend Developer
+              </h1>
               <span className="skillsSubtitle">9+ Months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
@@ -39,7 +49,13 @@ function Skills() {
           <div className="skillsListGrid">
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">HTML/CSS</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  HTML/CSS
+                </h3>
                 <div className="skillBar">
                   <span className="skillPerc skillHtml"></span>
                 </div>
@@ -48,7 +64,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">Javascript</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Javascript
+                </h3>
                 <div className="skillBar">
                   <span className="skillPerc skillJavascript"></span>
                 </div>
@@ -57,7 +79,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">React JS</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  React JS
+                </h3>
                 <div className="skillBar">
                   <span className="skillPerc skillReact"></span>
                 </div>
@@ -66,7 +94,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">Next JS</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Next JS
+                </h3>
                 <div className="skillBar">
                   <span className="skillPerc skillReact"></span>
                 </div>
@@ -75,7 +109,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">Gatsby JS</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Gatsby JS
+                </h3>
                 <div className="skillBar">
                   <span className="skillPerc skillGatsby"></span>
                 </div>
@@ -96,7 +136,13 @@ function Skills() {
           >
             <UilServerNetworkAlt size="30" className="skillsIcon" />
             <div>
-              <h1 className="skillsTitle">Backend Developer</h1>
+              <h1
+                className={
+                  themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
+                }
+              >
+                Backend Developer
+              </h1>
               <span className="skillsSubtitle">7+ Months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
@@ -105,7 +151,13 @@ function Skills() {
           <div className="skillsListGrid">
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">Node Js/Express JS</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Node Js/Express JS
+                </h3>
               </div>
               <div className="skillBar">
                 <span className="skillPerc skillNode"></span>
@@ -114,7 +166,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">Firebase</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Firebase
+                </h3>
               </div>
               <div className="skillBar">
                 <span className="skillPerc skillFirebase"></span>
@@ -135,7 +193,13 @@ function Skills() {
           >
             <UilDatabase size="30" className="skillsIcon" />
             <div>
-              <h1 className="skillsTitle">Database</h1>
+              <h1
+                className={
+                  themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
+                }
+              >
+                Database
+              </h1>
               <span className="skillsSubtitle">7+ months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
@@ -144,7 +208,13 @@ function Skills() {
           <div className="skillsListGrid">
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">MongoDB</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  MongoDB
+                </h3>
               </div>
               <div className="skillBar">
                 <span className="skillPerc skillMongo"></span>
@@ -153,7 +223,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">MySQL</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  MySQL
+                </h3>
               </div>
               <div className="skillBar">
                 <span className="skillPerc skillMysql"></span>
@@ -162,7 +238,13 @@ function Skills() {
 
             <div className="skillsData">
               <div className="skillsTitle">
-                <h3 className="skillName">PostgresSQL</h3>
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  PostgresSQL
+                </h3>
               </div>
               <div className="skillBar">
                 <span className="skillPerc skillPostgres"></span>
@@ -183,7 +265,13 @@ function Skills() {
           >
             <UilBag size="30" className="skillsIcon" />
             <div>
-              <h1 className="skillsTitle">Others</h1>
+              <h1
+                className={
+                  themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
+                }
+              >
+                Others
+              </h1>
             </div>
             <UisAngleDown size="30" className="skillsArrow" />
           </div>

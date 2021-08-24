@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-.skillsIcon, 
+.skillsIcon,
 .skillsArrow {
   font-size: 2rem;
   color: $firstColor;
@@ -53,6 +53,10 @@
   margin-bottom: $mb05;
 }
 
+.skillsTitleDark {
+  color: $bodyColor;
+}
+
 .skillsArrow {
   margin-left: auto;
   transition: 0.5s;
@@ -67,6 +71,10 @@
   font-size: $normalFontSize;
   font-weight: $fontMedium;
   margin-bottom: $mb075;
+}
+
+.skillNameDark {
+  color: $bodyColor;
 }
 
 .skillBar,
@@ -124,13 +132,13 @@
 .skillsList {
   display: flex;
   flex-wrap: wrap;
-  
+
   span {
     margin: 4px;
     padding: 8px 10px;
     background-color: $firstColor;
     color: white;
     border-radius: 8px;
-    transition: 1s;    
+    transition: 1s;
   }
 }

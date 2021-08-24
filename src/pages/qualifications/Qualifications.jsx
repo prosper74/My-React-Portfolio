@@ -6,12 +6,16 @@ import {
   UilCalendarAlt,
 } from "@iconscout/react-unicons";
 
-function Qualifications() {
+function Qualifications({ themeIcon }) {
   const [activeQua, setActiveQua] = useState(false);
 
   return (
     <section className="qualifications section" id="qualifications">
-      <h2 className="sectionTitle">Qualifications</h2>
+      <h2
+        className={themeIcon ? "sectionTitle sectionTitleDark" : "sectionTitle"}
+      >
+        Qualifications
+      </h2>
       <span className="sectionSubtitle">My journey so far</span>
 
       <div className="quaContainer container">
@@ -37,7 +41,11 @@ function Qualifications() {
             {/* First Education Qualification  */}
             <div className="quaData">
               <div>
-                <h3 className="quaTitle">Computer Science</h3>
+                <h3
+                  className={themeIcon ? "quaTitle quaTitleDark" : "quaTitle"}
+                >
+                  Computer Science
+                </h3>
                 <span className="quaSubtitle">Abia State - Polytechnic</span>
                 <div className="quaCalendar">
                   <UilCalendarAlt size="15" className="calIcon" />
@@ -61,7 +69,11 @@ function Qualifications() {
               </div>
 
               <div>
-                <h3 className="quaTitle">WASSCE</h3>
+                <h3
+                  className={themeIcon ? "quaTitle quaTitleDark" : "quaTitle"}
+                >
+                  WASSCE
+                </h3>
                 <span className="quaSubtitle">Dave Christian Academy</span>
                 <div className="quaCalendar">
                   <UilCalendarAlt size="15" className="calIcon" />
@@ -76,7 +88,11 @@ function Qualifications() {
             {/* First work Experience  */}
             <div className="quaData">
               <div>
-                <h3 className="quaTitle">Software Engineer</h3>
+                <h3
+                  className={themeIcon ? "quaTitle quaTitleDark" : "quaTitle"}
+                >
+                  Software Engineer
+                </h3>
                 <span className="quaSubtitle">Metrovatech, Nigeria</span>
                 <div className="quaCalendar">
                   <UilCalendarAlt size="15" className="calIcon" />
@@ -100,7 +116,11 @@ function Qualifications() {
               </div>
 
               <div>
-                <h3 className="quaTitle">Web/Graphics Designer</h3>
+                <h3
+                  className={themeIcon ? "quaTitle quaTitleDark" : "quaTitle"}
+                >
+                  Web/Graphics Designer
+                </h3>
                 <span className="quaSubtitle">Codelab LLC, USA</span>
                 <div className="quaCalendar">
                   <UilCalendarAlt size="15" className="calIcon" />
@@ -112,7 +132,11 @@ function Qualifications() {
             {/* Third Work Experience  */}
             <div className="quaData">
               <div>
-                <h3 className="quaTitle">Web Developer / Graphics Desinger</h3>
+                <h3
+                  className={themeIcon ? "quaTitle quaTitleDark" : "quaTitle"}
+                >
+                  Web Developer / Graphics Desinger
+                </h3>
                 <span className="quaSubtitle">
                   Telace Multimedia - Freelance
                 </span>
