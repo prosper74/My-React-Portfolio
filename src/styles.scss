@@ -3,10 +3,8 @@
 $headerHeight: 3rem;
 
 /* Colors */
-
-/* --first-color: hsl(var(--hue-color), 69%, 61%); */
 $firstColor: #9932cc;
-$secondColor: hsl(var(--hue-color), 69%, 61%);
+$secondColor: #311042;
 $firstColorAlt: #c042ff;
 $firstColorLighter: rgb(194, 194, 194);
 $titleColor: rgb(77, 77, 77);
@@ -14,8 +12,6 @@ $textColor: rgb(116, 116, 116);
 $textColorLight: rgb(153, 153, 153);
 $inputColor: rgb(238, 238, 238);
 $bodyColor: rgb(253, 245, 255);
-
-/* --body-color: hsl(var(--hue-color), 60%, 99%); */
 $containerColor: white;
 
 /* Fonts and Typography */
@@ -73,8 +69,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: $normalFontSize;
+  // background-color: $secondColor;
+  // color: $textColor;
+}
+
+.lightTheme {
   background-color: $bodyColor;
   color: $textColor;
+}
+
+.darkTheme {
+  background-color: $secondColor;
+  color: $containerColor;
 }
 
 code {
@@ -134,4 +140,27 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+// Scrollup button styles
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20rem;
+  background-color: $firstColor;
+  color: $bodyColor;
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: $zIndex;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $firstColorAlt;
+  }
+}
+
+.scrollup.active {
+  bottom: 4rem;
+  transition: 0.5s;
 }

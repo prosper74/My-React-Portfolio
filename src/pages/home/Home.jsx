@@ -5,12 +5,12 @@ import {
   UitGithubAlt,
   UitLinkedinAlt,
   UitTwitterAlt,
-  UitArrowCircleDown
+  UitArrowCircleDown,
 } from "@iconscout/react-unicons-thinline";
 
 import { UilMessage } from "@iconscout/react-unicons";
 
-function Home({ menuOpen, setMenuOpen }) {
+function Home({ themeIcon }) {
   const textRef = useRef();
 
   useEffect(() => {
@@ -22,8 +22,8 @@ function Home({ menuOpen, setMenuOpen }) {
         "Software Engineer",
         "Freelance Developer",
         "Freelance Designer",
-        "Content Creator"
-      ]
+        "Content Creator",
+      ],
     });
   }, []);
 
@@ -64,8 +64,10 @@ function Home({ menuOpen, setMenuOpen }) {
             </div>
 
             <div className="home__data">
-              <h1 className="home__title">Hi, I'm Prosper Atu</h1>
-              <h3 className="home__subtitle">
+              <h1 className={themeIcon ? "homeTitleDark" : "homeTitle"}>
+                Hi, I'm Prosper Atu
+              </h1>
+              <h3 className={themeIcon ? "homeSubtitle subtitleDark" : "homeSubtitle" }>
                 A <span ref={textRef}></span>
               </h3>
               <p className="description">

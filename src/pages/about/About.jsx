@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import "./about.scss";
-import { UilAngleUp } from '@iconscout/react-unicons'
+import { UilAngleUp } from "@iconscout/react-unicons";
 import { UisDownloadAlt } from "@iconscout/react-unicons-solid";
 
-function About() {
+function About({ themeIcon }) {
   const [readMore, setReadMore] = useState(false);
 
   return (
     <section className="about section" id="about">
-      <h2 className="sectionTitle">About Me</h2>
+      <h2
+        className={themeIcon ? "sectionTitle sectionTitleDark" : "sectionTitle"}
+      >
+        About Me
+      </h2>
       <span className="sectionSubtitle">My Introduction</span>
 
       <div className="aboutContainer container grid">
@@ -21,7 +25,6 @@ function About() {
             of time. I specialize in full-stack web development using
             JavaScript. I can plan and design a good Software Architecture,
             choosing the best Pattern(s).
-            
           </p>
           <br />
           {readMore && (
@@ -43,27 +46,27 @@ function About() {
             </div>
           )}
           <span className="readMore" onClick={() => setReadMore(!readMore)}>
-              {readMore ? <UilAngleUp /> : "Read More..."}
-            </span>
+            {readMore ? <UilAngleUp /> : "Read More..."}
+          </span>
         </span>
 
         <div className="aboutInfo">
           <div>
-            <span className="aboutInfoTitle">02+</span>
+            <span className={themeIcon ? "aboutInfoTitle aboutInfoTitleDark" : "aboutInfoTitle"}>02+</span>
             <span className="aboutInfoName">
               Years <br />
               Experience
             </span>
           </div>
           <div>
-            <span className="aboutInfoTitle">10+</span>
+            <span className={themeIcon ? "aboutInfoTitle aboutInfoTitleDark" : "aboutInfoTitle"}>10+</span>
             <span className="aboutInfoName">
               Completed <br />
               Projects
             </span>
           </div>
           <div>
-            <span className="aboutInfoTitle">03+</span>
+            <span className={themeIcon ? "aboutInfoTitle aboutInfoTitleDark" : "aboutInfoTitle"}>03+</span>
             <span className="aboutInfoName">
               Companies <br />
               Worked

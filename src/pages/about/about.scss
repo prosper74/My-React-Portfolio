@@ -1,13 +1,12 @@
 @import "../../styles.scss";
 
-// .aboutImg {
-//   justify-self: center;
-//   align-self: center;
-// }
+.sectionTitleDark {
+  color: $bodyColor;
+}
 
 .aboutDescription {
   margin-bottom: $mb075;
-  transition: all 20.9s ease;
+  transition: all 0.9s ease;
 
   .readMore {
     color: $firstColor;
@@ -16,7 +15,7 @@
   }
 
   .more {
-    transition:.5s;
+    transition: 0.5s;
   }
 }
 
@@ -33,11 +32,15 @@
   color: $titleColor;
 }
 
-.aboutInfoTitle, 
+.aboutInfoTitleDark {
+  color: $firstColor !important;
+}
+
+.aboutInfoTitle,
 .aboutInfoName {
-display: block;
-text-align: center;
-align-items: center;
+  display: block;
+  text-align: center;
+  align-items: center;
 }
 
 .aboutInfoName {

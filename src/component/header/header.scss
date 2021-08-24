@@ -34,7 +34,7 @@
 
 .navToggle {
   font-size: 1.1rem;
-  cursor: pointer; 
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -74,17 +74,17 @@
   gap: 2rem;
 }
 
-.nav__link {
+.navLink {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-size: $smallFontSize;
+  color: $titleColor;
+  font-weight: $fontMedium;
 }
 
-.nav__link:hover {
-  color: var(--first-color);
+.navLink:hover {
+  color: $firstColor;
 }
 
 .nav__icon {
@@ -92,15 +92,15 @@
   margin-bottom: 5px;
 }
 
-.nav__close {
+.navClose {
   position: absolute;
   right: 1.3rem;
   bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
+  color: $firstColor;
 }
 
-.nav__close:hover {
-  color: var(--first-color-alt);
+.navClose:hover {
+  color: $firstColorAlt;
 }
