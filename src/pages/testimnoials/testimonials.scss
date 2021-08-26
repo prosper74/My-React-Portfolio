@@ -45,11 +45,11 @@
 }
 
 .testimonials {
-	overflow: hidden;
+  overflow: hidden;
   .swiper-container {
     width: 800px;
     margin-left: auto;
-    margin-right: auto;		
+    margin-right: auto;
 
     .swiper-slide {
       font-size: 18px;
@@ -67,12 +67,16 @@
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      /* -webkit-justify-content: center; */
-      /* justify-content: center; */
-      /* -webkit-box-align: center; */
-      /* -ms-flex-align: center; */
-      /* -webkit-align-items: center; */
-      /* align-items: center; */
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .testimonials {
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 }

@@ -21,6 +21,10 @@
   color: $titleColor;
 }
 
+.portfolioTitleDark {
+  color: $bodyColor;
+}
+
 .portfolioSubtitle {
   font-size: $smallFontSize;
   font-weight: $fontMedium;
@@ -88,5 +92,13 @@
 
   .portfolioContainer .swiper-slide {
     width: 270px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolioContainer > .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }

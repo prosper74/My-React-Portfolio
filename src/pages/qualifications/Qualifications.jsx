@@ -119,7 +119,7 @@ function Qualifications({ themeIcon }) {
                 <h3
                   className={themeIcon ? "quaTitle quaTitleDark" : "quaTitle"}
                 >
-                  Web/Graphics Designer
+                  Web / Graphics Designer
                 </h3>
                 <span className="quaSubtitle">Codelab LLC, USA</span>
                 <div className="quaCalendar">

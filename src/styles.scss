@@ -169,3 +169,35 @@ img {
   bottom: 4rem;
   transition: 0.5s;
 }
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: $mb1;
+    margin-right: $mb1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding: 6rem 0 2rem;
+  }
+
+  .sectionSubtitle {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -6,6 +6,7 @@
 
 .contactInfo {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .phoneIcon {
@@ -74,5 +75,23 @@
     &:hover > .messageIcon {
       transform: translateX(0.5rem);
     }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .contactContainer {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contactContainer {
+    grid-template-columns: 1fr 1.5fr;
+    row-gap: 1rem;
+  }
+
+  .contactInputs {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

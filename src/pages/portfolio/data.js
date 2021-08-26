@@ -20,4 +20,18 @@ export const data = [
     subtitle: "Client Project",
     desc: "Wordpress website project Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cupiditate praesentium qui audantium asperiores blanditiis recusandae, ratione accusantium impedit.",
   },
+  {
+    id: 4,
+    img: "https://assets.justinmind.com/wp-content/uploads/2020/08/mockup-templates-to-download-now.png",
+    title: "Chappelle Daycare",
+    subtitle: "Client Project",
+    desc: "Wordpress website project Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cupiditate praesentium qui audantium asperiores blanditiis recusandae, ratione accusantium impedit.",
+  },
+  {
+    id: 5,
+    img: "https://assets.justinmind.com/wp-content/uploads/2020/08/mockup-templates-to-download-now.png",
+    title: "Chappelle Daycare",
+    subtitle: "Client Project",
+    desc: "Wordpress website project Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cupiditate praesentium qui audantium asperiores blanditiis recusandae, ratione accusantium impedit.",
+  },
 ];

@@ -10,7 +10,7 @@ import {
   UilHeartRate,
 } from "@iconscout/react-unicons";
 
-function Services() {
+function Services({ themeIcon }) {
   const [modalOne, setModalOne] = useState(false);
   const [modalTwo, setModalTwo] = useState(false);
   const [modalThree, setModalThree] = useState(false);
@@ -23,14 +23,16 @@ function Services() {
     modalFour === true && setModalFour(false);
   };
 
-  // onClick={() => setModalFour(false) }
-
   return (
     <section className="services section" id="services" onClick={handleModal}>
-      <h2 className="sectionTitle">Services</h2>
+      <h2
+        className={themeIcon ? "sectionTitle sectionTitleDark" : "sectionTitle"}
+      >
+        Services
+      </h2>
       <span className="sectionSubtitle">What I can do for you</span>
 
-      <div className="serviesContainer container grid">
+      <div className="servicesContainer container grid">
         {/* Service 1 */}
         <div className="servicesContent">
           <div>
@@ -49,6 +51,7 @@ function Services() {
           <div
             className={modalOne ? "servicesModal activeModal" : "servicesModal"}
           >
+            {/* Service 1 modal */}
             <div className="servicesModalContent">
               <h4 className="modalTitle">
                 Web App <br />

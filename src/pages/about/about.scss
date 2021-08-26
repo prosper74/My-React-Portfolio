@@ -16,7 +16,16 @@
 }
 
 .aboutInfo {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: space-evenly;
+  // margin-bottom: $mb1;
+}
+
+.aboutInfoCount {
   display: flex;
+  // flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: $mb1;
@@ -55,7 +64,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   transition: 1s;
-  margin: 0 auto;
+  margin: 3rem auto 0;
 
   .downloadIcon {
     margin-left: 4px;
@@ -65,4 +74,25 @@
     background-color: rgb(90, 0, 134);
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   }
+}
+
+@media screen and (min-width: 560px) {
+  .aboutContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    column-gap: 5rem;
+  }
+
+  .aboutDescription {
+    text-align: initial;
+  }
+
+  .aboutInfo {
+    justify-content: space-between;
+  }
+
 }

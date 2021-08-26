@@ -34,47 +34,41 @@ function Header({ menuOpen, setMenuOpen, themeIcon, setThemeIcon }) {
             atuProsper.
           </a>
 
-          <div className={"nav__menu " + (menuOpen && "show__menu")}>
-            <ul
-              className="nav__list grid align"
-              onClick={() => setMenuOpen(false)}
-            >
+          <div className={"navMenu " + (menuOpen && "show__menu")}>
+            <ul className="navList" onClick={() => setMenuOpen(false)}>
               <li className="nav__item">
                 <a href="#home" className="navLink">
-                  <UilHome size="18" className="nav__icon" /> Home
+                  <UilHome size="18" className="navIcon" /> Home
                 </a>
               </li>
               <li className="nav__item">
                 <a href="#about" className="navLink">
-                  <UilUser size="18" className="nav__icon" /> About
+                  <UilUser size="18" className="navIcon" /> About
                 </a>
               </li>
               <li className="nav__item">
                 <a href="#skills" className="navLink">
-                  <UilBriefcaseAlt size="18" className="nav__icon" /> Skills
+                  <UilBriefcaseAlt size="18" className="navIcon" /> Skills
                 </a>
               </li>
               <li className="nav__item">
                 <a href="#services" className="navLink">
-                  <UilScenery size="18" className="nav__icon" />{" "}
+                  <UilScenery size="18" className="navIcon" />{" "}
                   <span>Services</span>
                 </a>
               </li>
               <li className="nav__item">
                 <a href="#portfolio" className="navLink">
-                  <UilFileInfoAlt size="18" className="nav__icon" /> Portfolio
+                  <UilFileInfoAlt size="18" className="navIcon" /> Portfolio
                 </a>
               </li>
               <li className="nav__item">
                 <a href="#contact" className="navLink">
-                  <UilMessage size="18" className="nav__icon" /> Contact
+                  <UilMessage size="18" className="navIcon" /> Contact
                 </a>
               </li>
             </ul>
-            <UilTimes
-              className="navClose"
-              onClick={() => setMenuOpen(false)}
-            />
+            <UilTimes className="navClose" onClick={() => setMenuOpen(false)} />
           </div>
 
           <div className="nav__btns">

@@ -30,14 +30,14 @@ function Home({ themeIcon }) {
   return (
     <>
       <section className="home section" id="home">
-        <div className="home__container container grid">
-          <div className="home__content grid">
-            <div className="home__social">
+        <div className="homeContainer container grid">
+          <div className="homeContent grid">
+            <div className="homeSocial">
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noreferrer"
-                className="home__social__icon"
+                className="homeSocialIcon"
               >
                 <UitGithubAlt />
               </a>
@@ -45,7 +45,7 @@ function Home({ themeIcon }) {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="home__social__icon"
+                className="homeSocialIcon"
               >
                 <UitLinkedinAlt />
               </a>
@@ -53,14 +53,14 @@ function Home({ themeIcon }) {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                className="home__social__icon"
+                className="homeSocialIcon"
               >
                 <UitTwitterAlt />
               </a>
             </div>
 
             <div className="home__img">
-              <img src="assets/blob_img.svg" alt="" className="home__blob" />
+              <img src="assets/blob_img.svg" alt="" className="homeBlob" />
             </div>
 
             <div className="home__data">
@@ -74,7 +74,7 @@ function Home({ themeIcon }) {
                 I have high level experience in frontend/backend development and
                 content creation
               </p>
-              <a href="#contact" className="button button__flex">
+              <a href="#contact" className="button">
                 <div className="myButton">
                   Contact Me
                   <UilMessage size="20" className="contactIcon" />
@@ -83,9 +83,9 @@ function Home({ themeIcon }) {
             </div>
           </div>
 
-          <div className="home__scroll">
-            <a href="#about" className="home__scrol__button button__flex">
-              <UitArrowCircleDown size="40" className="home__scroll__arrow" />
+          <div className="homeScroll">
+            <a href="#about">
+              <UitArrowCircleDown size="40" className="homeScrollArrow" />
             </a>
           </div>
         </div>

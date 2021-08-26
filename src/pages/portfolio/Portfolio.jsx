@@ -17,10 +17,14 @@ import SwiperCore, { EffectCoverflow, Pagination } from "swiper/core";
 // install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 
-function Portfolio() {
+function Portfolio({ themeIcon }) {
   return (
     <section className="portfolio section" id="portfolio">
-      <h2 className="sectionTitle">Portfolio</h2>
+      <h2
+        className={themeIcon ? "sectionTitle sectionTitleDark" : "sectionTitle"}
+      >
+        Portfolio
+      </h2>
       <span className="sectionSubtitle">My recent projects</span>
 
       <div className="portfolioContainer container">
@@ -49,8 +53,24 @@ function Portfolio() {
                     <img src={d.img} alt="" className="portfolioImg" />
 
                     <div className="portfolioDate">
-                      <h3 className="portfolioTitle">{d.title}</h3>
-                      <h4 className="portfolioSubtitle">{d.subtitle}</h4>
+                      <h3
+                        className={
+                          themeIcon
+                            ? "portfolioTitle portfolioTitleDark"
+                            : "portfolioTitle"
+                        }
+                      >
+                        {d.title}
+                      </h3>
+                      <h4
+                        className={
+                          themeIcon
+                            ? "portfolioSubtitle portfolioTitleDark"
+                            : "portfolioSubtitle"
+                        }
+                      >
+                        {d.subtitle}
+                      </h4>
                       <p className="portfolioDesc">{d.desc}</p>
                       <a href="#" className="portfolioButton">
                         View

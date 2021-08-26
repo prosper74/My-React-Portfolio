@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-.serviesContainer {
+.servicesContainer {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -79,6 +79,7 @@
 	background-color: $containerColor;
 	padding: 2rem 1.5rem;
 	border-radius: 0.5rem;
+  color: $titleColor;
 }
 
 .modalServices {
@@ -116,4 +117,23 @@
 .activeModal {
 	opacity: 1;
 	visibility: visible;
+}
+
+@media screen and (max-width: 350px) {
+  .servicesContainer {
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servicesContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .servicesContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

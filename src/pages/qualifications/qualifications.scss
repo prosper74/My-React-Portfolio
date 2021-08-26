@@ -87,3 +87,25 @@
 .quaTitleDark {
   color: $firstColorAlt;
 }
+
+@media screen and (min-width: 560px) {
+  .quaSections {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quaTab {
+    justify-content: center;
+  }
+
+  .quaButton {
+    margin: 0 $mb25;
+  }
+
+  .quaSections {
+    grid-template-columns: 0.5fr;
+  }
+}

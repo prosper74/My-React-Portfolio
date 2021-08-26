@@ -51,35 +51,61 @@ function About({ themeIcon }) {
         </span>
 
         <div className="aboutInfo">
-          <div>
-            <span className={themeIcon ? "aboutInfoTitle aboutInfoTitleDark" : "aboutInfoTitle"}>02+</span>
-            <span className="aboutInfoName">
-              Years <br />
-              Experience
-            </span>
+          <div className="aboutInfoCount">
+            <div>
+              <span
+                className={
+                  themeIcon
+                    ? "aboutInfoTitle aboutInfoTitleDark"
+                    : "aboutInfoTitle"
+                }
+              >
+                02+
+              </span>
+              <span className="aboutInfoName">
+                Years <br />
+                Experience
+              </span>
+            </div>
+            <div>
+              <span
+                className={
+                  themeIcon
+                    ? "aboutInfoTitle aboutInfoTitleDark"
+                    : "aboutInfoTitle"
+                }
+              >
+                10+
+              </span>
+              <span className="aboutInfoName">
+                Completed <br />
+                Projects
+              </span>
+            </div>
+            <div>
+              <span
+                className={
+                  themeIcon
+                    ? "aboutInfoTitle aboutInfoTitleDark"
+                    : "aboutInfoTitle"
+                }
+              >
+                03+
+              </span>
+              <span className="aboutInfoName">
+                Companies <br />
+                Worked
+              </span>
+            </div>
           </div>
-          <div>
-            <span className={themeIcon ? "aboutInfoTitle aboutInfoTitleDark" : "aboutInfoTitle"}>10+</span>
-            <span className="aboutInfoName">
-              Completed <br />
-              Projects
-            </span>
-          </div>
-          <div>
-            <span className={themeIcon ? "aboutInfoTitle aboutInfoTitleDark" : "aboutInfoTitle"}>03+</span>
-            <span className="aboutInfoName">
-              Companies <br />
-              Worked
-            </span>
-          </div>
-        </div>
 
-        <a href="assets/cv/resume.pdf" className="button button__flex">
-          <div className="aboutButton">
-            Download Resume
-            <UisDownloadAlt size="20" className="downloadIcon" />
-          </div>
-        </a>
+          <a href="assets/cv/resume.pdf" className="button">
+            <div className="aboutButton">
+              Download Resume
+              <UisDownloadAlt size="20" className="downloadIcon" />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );

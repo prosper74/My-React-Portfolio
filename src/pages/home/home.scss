@@ -1,32 +1,32 @@
 @import "../../styles.scss";
 
-.home__container {
+.homeContainer {
   gap: 1rem;
 }
 
-.home__content {
+.homeContent {
   grid-template-columns: 0.5fr 3fr;
   padding-top: 1.5rem;
   align-items: center;
 }
 
-.home__social {
+.homeSocial {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
 }
 
-.home__social__icon {
+.homeSocialIcon {
   font-size: 1.25rem;
   color: $firstColor;
 }
 
-.home__social__icon:hover {
+.homeSocialIcon:hover {
   font-size: 1.25rem;
   color: $firstColorAlt;
 }
 
-.home__blob {
+.homeBlob {
   width: 300px;
 }
 
@@ -65,11 +65,19 @@
 .homeTitle {
   font-size: $bigFontSize;
   color: $titleColor;
+
+  @media screen and (max-width: 350px) {
+    font-size: 1.8rem;
+  }
 }
 
 .homeTitleDark {
   font-size: $bigFontSize;
   color: $bodyColor;
+
+  @media screen and (max-width: 350px) {
+    font-size: 1.8rem;
+  }
 }
 
 .homeSubtitle {
@@ -87,17 +95,66 @@
   margin-bottom: $mb2;
 }
 
-.home__scroll {
+.homeScroll {
   margin-top: 5%;
   color: $firstColor;
   transition: 0.5s;
 
-  .home__scroll__arrow {
+  .homeScrollArrow {
     color: $firstColor;
     transition: 0.5s;
 
     &:hover {
       transform: translateY(0.25rem);
     }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .homeContent {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home__data {
+    grid-column: initial;
+  }
+
+  .home__img {
+    order: 1;
+    justify-self: center;
+  }
+
+  .homeScroll {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homeContainer {
+    row-gap: 5rem;
+  }
+
+  .homeContent {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
+
+  .homeBlob {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homeBlob {
+    width: 450px;
+  }
+
+  .homeSocial {
+    // transform: translateX(-6rem);
+    margin-right: 4rem;
+  }
+
+  .homeScroll {
+    margin-top: -1%;
   }
 }

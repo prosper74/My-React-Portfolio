@@ -15,10 +15,14 @@ import SwiperCore, { Pagination, Navigation } from "swiper/core";
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
-function Testimonials() {
+function Testimonials({ themeIcon }) {
   return (
     <section className="testimonials section" id="testimonials">
-      <h2 className="sectionTitle">Testimonials</h2>
+      <h2
+        className={themeIcon ? "sectionTitle sectionTitleDark" : "sectionTitle"}
+      >
+        Testimonials
+      </h2>
       <span className="sectionSubtitle">What my clients are saying</span>
 
       <div className="testimonialContainer container">
