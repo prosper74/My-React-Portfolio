@@ -34,10 +34,14 @@ function Services({ themeIcon }) {
 
       <div className="servicesContainer container grid">
         {/* Service 1 */}
-        <div className="servicesContent">
+        <div className={themeIcon ? "servicesContentDark" : "servicesContent"}>
           <div>
             <UilLayersAlt size="30" className="ServicesIcon" />
-            <h3 className="ServicesTitle">
+            <h3
+              className={
+                themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
+              }
+            >
               Web App <br />
               <span>Project Planning</span>
             </h3>
@@ -52,8 +56,16 @@ function Services({ themeIcon }) {
             className={modalOne ? "servicesModal activeModal" : "servicesModal"}
           >
             {/* Service 1 modal */}
-            <div className="servicesModalContent">
-              <h4 className="modalTitle">
+            <div
+              className={
+                themeIcon ? "servicesModalContentDark" : "servicesModalContent"
+              }
+            >
+              <h4
+                className={
+                  themeIcon ? "modalTitle modalTitleDark" : "modalTitle"
+                }
+              >
                 Web App <br />
                 <span>Project Planning</span>
               </h4>
@@ -82,10 +94,14 @@ function Services({ themeIcon }) {
         </div>
 
         {/* Service 2 */}
-        <div className="servicesContent">
+        <div className={themeIcon ? "servicesContentDark" : "servicesContent"}>
           <div>
             <UilBracketsCurly size="30" className="ServicesIcon" />
-            <h3 className="ServicesTitle">
+            <h3
+              className={
+                themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
+              }
+            >
               Software Development <br />
               <span>Frontend and Backend</span>
             </h3>
@@ -99,8 +115,16 @@ function Services({ themeIcon }) {
           <div
             className={modalTwo ? "servicesModal activeModal" : "servicesModal"}
           >
-            <div className="servicesModalContent">
-              <h4 className="modalTitle">
+            <div
+              className={
+                themeIcon ? "servicesModalContentDark" : "servicesModalContent"
+              }
+            >
+              <h4
+                className={
+                  themeIcon ? "modalTitle modalTitleDark" : "modalTitle"
+                }
+              >
                 Software Development/Deployment <br />
                 <span>Frontend and Backend</span>
               </h4>
@@ -134,10 +158,14 @@ function Services({ themeIcon }) {
         </div>
 
         {/* Service 3 */}
-        <div className="servicesContent">
+        <div className={themeIcon ? "servicesContentDark" : "servicesContent"}>
           <div>
             <UilFileCheck size="30" className="ServicesIcon" />
-            <h3 className="ServicesTitle">
+            <h3
+              className={
+                themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
+              }
+            >
               Software Testing <br />
               <span>Frontend and Backend</span>
             </h3>
@@ -153,8 +181,16 @@ function Services({ themeIcon }) {
               modalThree ? "servicesModal activeModal" : "servicesModal"
             }
           >
-            <div className="servicesModalContent">
-              <h4 className="modalTitle">
+            <div
+              className={
+                themeIcon ? "servicesModalContentDark" : "servicesModalContent"
+              }
+            >
+              <h4
+                className={
+                  themeIcon ? "modalTitle modalTitleDark" : "modalTitle"
+                }
+              >
                 Software Testing <br />
                 <span>Frontend and Backend</span>
               </h4>
@@ -183,10 +219,14 @@ function Services({ themeIcon }) {
         </div>
 
         {/* Service 4 */}
-        <div className="servicesContent">
+        <div className={themeIcon ? "servicesContentDark" : "servicesContent"}>
           <div>
             <UilHeartRate size="30" className="ServicesIcon" />
-            <h3 className="ServicesTitle">
+            <h3
+              className={
+                themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
+              }
+            >
               Software Maintenance <br />
               <span>Version Control</span>
             </h3>
@@ -202,8 +242,16 @@ function Services({ themeIcon }) {
               modalFour ? "servicesModal activeModal" : "servicesModal"
             }
           >
-            <div className="servicesModalContent">
-              <h4 className="modalTitle">
+            <div
+              className={
+                themeIcon ? "servicesModalContentDark" : "servicesModalContent"
+              }
+            >
+              <h4
+                className={
+                  themeIcon ? "modalTitle modalTitleDark" : "modalTitle"
+                }
+              >
                 Software Maintenance <br />
                 <span>Version Control</span>
               </h4>

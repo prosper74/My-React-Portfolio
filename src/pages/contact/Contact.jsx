@@ -38,27 +38,29 @@ function Contact({ themeIcon }) {
 
         <form onSubmit={handleSubmit} className="contactForm grid">
           <div className="contactInputs grid">
-            <div className="contactContent">
+            <div
+              className={themeIcon ? "contactContentDark" : "contactContent"}
+            >
               <label htmlFor="name" className="contactLabel">
                 Name
               </label>
               <input type="text" id="name" />
             </div>
 
-            <div className="contactContent">
+            <div className={themeIcon ? "contactContentDark" : "contactContent"}>
               <label htmlFor="email" className="contactLabel">
                 Email
               </label>
               <input type="email" id="email" />
-            </div>            
-          </div>
-          <div className="contactContent">
-              <label htmlFor="project" className="contactLabel">
-                Subject
-              </label>
-              <input type="text" id="project" />
             </div>
-          <div className="contactContent">
+          </div>
+          <div className={themeIcon ? "contactContentDark" : "contactContent"}>
+            <label htmlFor="project" className="contactLabel">
+              Subject
+            </label>
+            <input type="text" id="project" />
+          </div>
+          <div className={themeIcon ? "contactContentDark" : "contactContent"}>
             <label htmlFor="message" className="contactLabel">
               Message
             </label>

@@ -13,6 +13,8 @@ $textColorLight: rgb(153, 153, 153);
 $inputColor: rgb(238, 238, 238);
 $bodyColor: rgb(253, 245, 255);
 $containerColor: white;
+$containerColorDark: #2b0e3a;
+$textDark: #f4e2fd;
 
 /* Fonts and Typography */
 $bigFontSize: 2rem;
@@ -80,7 +82,7 @@ body {
 
 .darkTheme {
   background-color: $secondColor;
-  color: $containerColor;
+  color: $textDark;
 }
 
 code {

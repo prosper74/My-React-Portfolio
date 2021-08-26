@@ -31,6 +31,9 @@ function Testimonials({ themeIcon }) {
           spaceBetween={15}
           loop={true}
           navigation={false}
+          pagination={{
+            clickable: true,
+          }}
           className="mySwiper"
         >
           {data.map((d) => (
@@ -49,7 +52,15 @@ function Testimonials({ themeIcon }) {
                   </div>
 
                   <div className="nameSection">
-                    <h3 className="testimonialName">{d.name}</h3>
+                    <h3
+                      className={
+                        themeIcon
+                          ? "testimonialName testimonialNameDark"
+                          : "testimonialName"
+                      }
+                    >
+                      {d.name}
+                    </h3>
                     <span className="testimonialBusiness">{d.designation}</span>
                   </div>
 
@@ -59,10 +70,6 @@ function Testimonials({ themeIcon }) {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Testimonial 1 */}
-
-        {/* Testimonial 2 */}
       </div>
     </section>
   );

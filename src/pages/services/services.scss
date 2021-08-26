@@ -7,7 +7,20 @@
 
 .servicesContent {
   position: relative;
-  background-color: $containerColor;
+  // background-color: $containerColor;
+  padding: 2.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.servicesContentDark {
+  position: relative;
+  background-color: $containerColorDark;
   padding: 2.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -35,11 +48,14 @@
   }
 }
 
+.ServicesTitleDark {
+  color: $containerColor;
+}
+
 .viewMoreBtn {
   display: flex;
   align-items: center;
   background-color: transparent;
-  color: $textColor;
   transition: 0.5s;
   font-size: $smallFontSize;
   cursor: pointer;
@@ -75,48 +91,58 @@
 }
 
 .servicesModalContent {
-	position: relative;
-	background-color: $containerColor;
-	padding: 2rem 1.5rem;
-	border-radius: 0.5rem;
-  color: $titleColor;
+  position: relative;
+  background-color: $containerColor;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.servicesModalContentDark {
+  position: relative;
+  background-color: $containerColorDark;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .modalServices {
-	row-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .modalService {
-	display: flex;
+  display: flex;
 }
 
 .modalTitle {
-	font-size: $h3FontSize;
-	font-weight: $fontMedium;
-	margin-bottom: $mb15;
+  font-size: $h3FontSize;
+  font-weight: $fontMedium;
+  margin-bottom: $mb15;
 
-	span {
-		font-size: $smallFontSize;
-	}
+  span {
+    font-size: $smallFontSize;
+  }
+}
+
+.modalTitleDark {
+  color: $bodyColor;
 }
 
 .modalCLoseIcon {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 1.5rem;
-	color: $firstColor;
-	cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: $firstColor;
+  cursor: pointer;
 }
 
 .modalServiceIcon {
-	color: $firstColor;
-	margin-right: $mb025;
+  color: $firstColor;
+  margin-right: $mb025;
 }
 
 .activeModal {
-	opacity: 1;
-	visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 350px) {

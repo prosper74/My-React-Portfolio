@@ -31,20 +31,26 @@
     padding: 0.75rem 1rem 0.25rem;
   }
 
-  .contactLabel {
-		font-size: $smallerFontSize;
-		color: $titleColor;
+  .contactContentDark {
+    background-color: $containerColorDark;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
   }
 
-	input, textarea {
-		width: 100%;
-		background-color: $inputColor;
-		color: $textColor;
-		font-size: $normalFontSize;
-		border: none;
-		outline: none;
-		padding: .5rem;
-	}
+  .contactLabel {
+    font-size: $smallerFontSize;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: inherit;
+    color: $textColor;
+    font-size: $normalFontSize;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+  }
 
   button {
     display: flex;
