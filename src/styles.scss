@@ -65,6 +65,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.loader {
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  display: block;
+  margin: 20rem auto;
+}
+
 body {
   margin: 0 0 $headerHeight 0;
   font-family: "Roboto", sans-serif;
