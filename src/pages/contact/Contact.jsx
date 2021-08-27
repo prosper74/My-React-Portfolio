@@ -5,6 +5,25 @@ import { data } from "./data";
 import { useForm, ValidationError } from "@formspree/react";
 
 function Contact({ themeIcon }) {
+  // states to handle the form values (controlled form)
+  const [contactDetails, setContactDetails] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setContactDetails((prevNote) => {
+      return {
+        ...prevNote,
+        [name]: value,
+      };
+    });
+  }
+
   // Initialize Formspree (A third party app for sending emails), set your formspree endpoint inside the useForm()
   const [state, handleSubmit] = useForm("xnqloeyg");
 
@@ -17,6 +36,7 @@ function Contact({ themeIcon }) {
       </h2>
       <span className="sectionSubtitle">I will be glad to hear from you</span>
 
+      {/* loops through all the conact details in data.js file and display them here  */}
       <div className="contactContainer container grid">
         <div>
           {data.map((d) => (
@@ -36,6 +56,7 @@ function Contact({ themeIcon }) {
           ))}
         </div>
 
+        {/* Contact form. The handleSubmit function is from formspree. */}
         <form onSubmit={handleSubmit} className="contactForm grid">
           <div className="contactInputs grid">
             <div
@@ -44,7 +65,15 @@ function Contact({ themeIcon }) {
               <label htmlFor="name" className="contactLabel">
                 Name
               </label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={contactDetails.name}
+                onChange={handleChange}
+                required
+              />
+              {/* formspree validations */}
               <ValidationError
                 prefix="Name"
                 field="name"
@@ -58,7 +87,14 @@ function Contact({ themeIcon }) {
               <label htmlFor="email" className="contactLabel">
                 Email
               </label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={contactDetails.email}
+                onChange={handleChange}
+                required
+              />
               <ValidationError
                 prefix="Email"
                 field="email"
@@ -70,7 +106,14 @@ function Contact({ themeIcon }) {
             <label htmlFor="project" className="contactLabel">
               Subject
             </label>
-            <input type="text" id="project" name="subject" required />
+            <input
+              type="text"
+              id="project"
+              name="subject"
+              value={contactDetails.subject}
+              onChange={handleChange}
+              required
+            />
             <ValidationError
               prefix="Subject"
               field="subject"
@@ -81,7 +124,15 @@ function Contact({ themeIcon }) {
             <label htmlFor="message" className="contactLabel">
               Message
             </label>
-            <textarea name="message" id="message" cols="0" rows="7" required />
+            <textarea
+              name="message"
+              id="message"
+              cols="0"
+              rows="7"
+              value={contactDetails.message}
+              onChange={handleChange}
+              required
+            />
             <ValidationError
               prefix="Message"
               field="message"
@@ -93,11 +144,17 @@ function Contact({ themeIcon }) {
             Submit Message <UilMessage size="18" className="messageIcon" />
           </button>
 
+          {/* if the form is sent successfully, give the sender a thank you message. Then setTimeout and clear the values  */}
           {state.succeeded && <p>Thanks for your meesage!</p>}
           {state.succeeded &&
             setTimeout(() => {
-              location.reload();
-            }, 1500)}
+              setContactDetails({
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+              });
+            }, 1000)}
         </form>
       </div>
     </section>
