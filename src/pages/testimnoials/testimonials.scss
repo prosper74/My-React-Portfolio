@@ -23,7 +23,7 @@
 }
 
 .nameSection {
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
 }
 
 .testimonialName {
@@ -75,6 +75,7 @@
   }
 }
 
+// responsive styles
 @media screen and (min-width: 1250px) {
   .testimonials {
     .swiper-container {

@@ -25,23 +25,25 @@ function Testimonials({ themeIcon }) {
       </h2>
       <span className="sectionSubtitle">What my clients are saying</span>
 
+      {/* Initiate the slider */}
       <div className="testimonialContainer container">
         <Swiper
           slidesPerView={3}
           spaceBetween={15}
           loop={true}
           navigation={false}
-          pagination={{
-            clickable: true,
-          }}
           className="mySwiper"
         >
+          {/* Render sliders. the source data is from the data.js file */}
           {data.map((d) => (
-            <SwiperSlide>
-              <div className="testimonialContent" key={d.id}>
+            <SwiperSlide key={d.id}>
+              <div className="testimonialContent">
                 <div className="testimonialData">
                   <div className="testimonialHeader">
-                    <img src={d.img} alt="" className="testImg" />
+                    {/* testimonial image  */}
+                    <img src={d.img} alt={d.name} className="testImg" />
+
+                    {/* the star icons  */}
                     <div>
                       <UisStar size="15" className="starIcon" />
                       <UisStar size="15" className="starIcon" />
@@ -51,6 +53,7 @@ function Testimonials({ themeIcon }) {
                     </div>
                   </div>
 
+                  {/* testimonial name and content. with conditional rendering based on dark or light theme */}
                   <div className="nameSection">
                     <h3
                       className={

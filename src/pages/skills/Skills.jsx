@@ -10,6 +10,7 @@ import { UisAngleDown } from "@iconscout/react-unicons-solid";
 import { otherSkils } from "./data";
 
 function Skills({ themeIcon }) {
+  // the states of the toggle buttons
   const [toggle, setToggle] = useState(false);
   const [toggleTwo, setToggleTwo] = useState(false);
   const [toggleThree, setToggleThree] = useState(false);
@@ -32,6 +33,7 @@ function Skills({ themeIcon }) {
           }
         >
           <div className="skillsHeader" onClick={() => setToggle(!toggle)}>
+            {/* skills 1 icon  */}
             <UilBracketsCurly size="30" className="skillsIcon" />
             <div>
               <h1
@@ -56,9 +58,9 @@ function Skills({ themeIcon }) {
                 >
                   HTML/CSS
                 </h3>
-                <div className="skillBar">
+                {/* <div className="skillBar">
                   <span className="skillPerc skillHtml"></span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -71,9 +73,9 @@ function Skills({ themeIcon }) {
                 >
                   Javascript
                 </h3>
-                <div className="skillBar">
+                {/* <div className="skillBar">
                   <span className="skillPerc skillJavascript"></span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -86,9 +88,9 @@ function Skills({ themeIcon }) {
                 >
                   React JS
                 </h3>
-                <div className="skillBar">
+                {/* <div className="skillBar">
                   <span className="skillPerc skillReact"></span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -101,9 +103,9 @@ function Skills({ themeIcon }) {
                 >
                   Next JS
                 </h3>
-                <div className="skillBar">
+                {/* <div className="skillBar">
                   <span className="skillPerc skillReact"></span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -116,9 +118,9 @@ function Skills({ themeIcon }) {
                 >
                   Gatsby JS
                 </h3>
-                <div className="skillBar">
+                {/* <div className="skillBar">
                   <span className="skillPerc skillGatsby"></span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -159,9 +161,9 @@ function Skills({ themeIcon }) {
                   Node Js/Express JS
                 </h3>
               </div>
-              <div className="skillBar">
+              {/* <div className="skillBar">
                 <span className="skillPerc skillNode"></span>
-              </div>
+              </div> */}
             </div>
 
             <div className="skillsData">
@@ -174,9 +176,9 @@ function Skills({ themeIcon }) {
                   Firebase
                 </h3>
               </div>
-              <div className="skillBar">
+              {/* <div className="skillBar">
                 <span className="skillPerc skillFirebase"></span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -216,9 +218,9 @@ function Skills({ themeIcon }) {
                   MongoDB
                 </h3>
               </div>
-              <div className="skillBar">
+              {/* <div className="skillBar">
                 <span className="skillPerc skillMongo"></span>
-              </div>
+              </div> */}
             </div>
 
             <div className="skillsData">
@@ -231,9 +233,9 @@ function Skills({ themeIcon }) {
                   MySQL
                 </h3>
               </div>
-              <div className="skillBar">
+              {/* <div className="skillBar">
                 <span className="skillPerc skillMysql"></span>
-              </div>
+              </div> */}
             </div>
 
             <div className="skillsData">
@@ -246,9 +248,9 @@ function Skills({ themeIcon }) {
                   PostgresSQL
                 </h3>
               </div>
-              <div className="skillBar">
+              {/* <div className="skillBar">
                 <span className="skillPerc skillPostgres"></span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

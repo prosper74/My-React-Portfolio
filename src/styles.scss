@@ -181,6 +181,22 @@ img {
   transition: 0.5s;
 }
 
+// Scroll Bar styles 
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: $textDark;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $firstColor;
+  border-radius: .5rem;
+
+  &:hover {
+    background-color: $secondColor;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .container {
     margin-left: $mb1;

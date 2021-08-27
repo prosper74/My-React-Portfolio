@@ -66,6 +66,7 @@
   font-size: $bigFontSize;
   color: $titleColor;
 
+  // Make the title text smaller for small screen sizes 
   @media screen and (max-width: 350px) {
     font-size: 1.8rem;
   }
@@ -75,6 +76,7 @@
   font-size: $bigFontSize;
   color: $bodyColor;
 
+  // Make the description text smaller for small screen sizes
   @media screen and (max-width: 350px) {
     font-size: 1.8rem;
   }
@@ -82,7 +84,6 @@
 
 .homeSubtitle {
   font-size: $h3FontSize;
-  // color: $textColor;
   font-weight: $fontMedium;
   margin-bottom: $mb075;
 }

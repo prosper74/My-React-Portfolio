@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./portfolio.scss";
 import { data } from "./data";
 import { UilExternalLinkAlt } from "@iconscout/react-unicons";
@@ -27,6 +27,7 @@ function Portfolio({ themeIcon }) {
       </h2>
       <span className="sectionSubtitle">My recent projects</span>
 
+      {/* This is where I display the slide. The portfolioContainer class is in the portfolio.scss file, while the container class is from the global style  */}
       <div className="portfolioContainer container">
         <div>
           <Swiper
@@ -46,13 +47,16 @@ function Portfolio({ themeIcon }) {
             }}
             className="mySwiper"
           >
+            {/* This is where each slide is rendered using the map funcion. Its data source if from the data.js file in the portfolio directory  */}
             {data.map((d) => (
-              <SwiperSlide>
-                <div className="portfolioContent grid" key={d.id}>
+              <SwiperSlide key={d.id}>
+                <div className="portfolioContent grid">
                   <div>
+                    {/* portfolio image mockup */}
                     <img src={d.img} alt="" className="portfolioImg" />
 
                     <div className="portfolioDate">
+                      {/* Project title and description. Having conditional rendering based on dark or light theme. It checks if the themeIcon state is true or false  */}
                       <h3
                         className={
                           themeIcon
@@ -71,8 +75,16 @@ function Portfolio({ themeIcon }) {
                       >
                         {d.subtitle}
                       </h4>
+
+                      {/* This is the project description  */}
                       <p className="portfolioDesc">{d.desc}</p>
-                      <a href="#" className="portfolioButton">
+
+                      {/* This is the link to view the project. It opens in a new tab  */}
+                      <a
+                        href={d.link}
+                        target="_blank"
+                        className="portfolioButton"
+                      >
                         View
                         <UilExternalLinkAlt size="18" className="btnIcon" />
                       </a>

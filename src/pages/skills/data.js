@@ -1,7 +1,7 @@
 export const otherSkils = [
   {
     id: 1,
-    name: "AWS",
+    name: "Strapi",
   },
   {
     id: 2,
@@ -9,11 +9,11 @@ export const otherSkils = [
   },
   {
     id: 3,
-    name: "Typescript",
+    name: "GraphQL",
   },
   {
     id: 4,
-    name: "Material-UI",
+    name: "REST API",
   },
   {
     id: 5,
@@ -21,32 +21,28 @@ export const otherSkils = [
   },
   {
     id: 6,
-    name: "React Testing Library",
+    name: "Material UI",
   },
-  {
-    id: 7,
-    name: "Redis",
-  },
-  {
-    id: 8,
-    name: "Swagger",
-  },
-  {
-    id: 9,
-    name: "Docker",
-  },
-  {
-    id: 10,
-    name: "RabbitMQ",
-  },
+  // {
+  //   id: 8,
+  //   name: "Swagger",
+  // },
+  // {
+  //   id: 9,
+  //   name: "Docker",
+  // },
+  // {
+  //   id: 10,
+  //   name: "RabbitMQ",
+  // },
   {
     id: 11,
     name: "Redux",
   },
-  {
-    id: 12,
-    name: "Elastic Search",
-  },
+  // {
+  //   id: 12,
+  //   name: "Elastic Search",
+  // },
   {
     id: 13,
     name: "Wordpress",

@@ -36,7 +36,10 @@ function Services({ themeIcon }) {
         {/* Service 1 */}
         <div className={themeIcon ? "servicesContentDark" : "servicesContent"}>
           <div>
+            {/* service icon */}
             <UilLayersAlt size="30" className="ServicesIcon" />
+
+            {/* service title  */}
             <h3
               className={
                 themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
@@ -47,6 +50,7 @@ function Services({ themeIcon }) {
             </h3>
           </div>
 
+          {/* this controls the open and closing of the modal...using useState hook */}
           <span className="viewMoreBtn" onClick={() => setModalOne(true)}>
             View More
             <UilAngleRight size="18" className="viewMoreIcon" />
@@ -56,6 +60,8 @@ function Services({ themeIcon }) {
             className={modalOne ? "servicesModal activeModal" : "servicesModal"}
           >
             {/* Service 1 modal */}
+
+            {/* this controls the class based on dark or light theme  */}
             <div
               className={
                 themeIcon ? "servicesModalContentDark" : "servicesModalContent"
@@ -66,15 +72,19 @@ function Services({ themeIcon }) {
                   themeIcon ? "modalTitle modalTitleDark" : "modalTitle"
                 }
               >
+                {/* modal title  */}
                 Web App <br />
                 <span>Project Planning</span>
               </h4>
+
+              {/* close modal icon. you can also click anywhere on the page to close the modal */}
               <UilTimes
                 size="18"
                 className="modalCLoseIcon"
                 onClick={() => setModalOne(false)}
               />
 
+              {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
@@ -134,6 +144,7 @@ function Services({ themeIcon }) {
                 onClick={() => setModalTwo(false)}
               />
 
+              {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
@@ -200,6 +211,7 @@ function Services({ themeIcon }) {
                 onClick={() => setModalThree(false)}
               />
 
+              {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I can
@@ -260,19 +272,19 @@ function Services({ themeIcon }) {
                 className="modalCLoseIcon"
                 onClick={() => setModalFour(false)}
               />
-
+              {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I can
-                  run unix, Jest, E2E and cypress tests
-                </li>
-                <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create API documentation using Swagger
+                  create and manage repositories, pull/merge requests, etc
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="22" className="modalServiceIcon" />I use
-                  eslint and pretier to create clean and maintainable codes
+                  <UilCheckCircle size="18" className="modalServiceIcon" />I can
+                  create actions to test pull request before merging
+                </li>
+                <li className="modalService">
+                  <UilCheckCircle size="22" className="modalServiceIcon" />I can
+                  create contineous deploy version control
                 </li>
               </ul>
             </div>
