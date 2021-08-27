@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "@iconscout/react-unicons": "1.1.6",
     "@iconscout/react-unicons-monochrome": "0.0.5",
     "@iconscout/react-unicons-solid": "0.0.3",
