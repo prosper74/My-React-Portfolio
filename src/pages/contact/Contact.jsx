@@ -2,30 +2,56 @@ import React, { useState } from "react";
 import "./contact.scss";
 import { UilMessage } from "@iconscout/react-unicons";
 import { data } from "./data";
-import { useForm, ValidationError } from "@formspree/react";
+import emailjs from "emailjs-com";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Snackbar from "@material-ui/core/Snackbar";
 
 function Contact({ themeIcon }) {
-  // states to handle the form values (controlled form)
-  const [contactDetails, setContactDetails] = useState({
-    name: "",
-    email: "",
-    subject: "",
+  const buttonContent = (
+    <React.Fragment>
+      Submit Message <UilMessage size="18" className="messageIcon" />
+    </React.Fragment>
+  );
+
+  const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState({
+    open: false,
     message: "",
+    backgroungColor: "",
   });
 
-  function handleChange(event) {
-    const { name, value } = event.target;
+  function sendEmail(e) {
+    e.preventDefault();
+    setLoading(true);
 
-    setContactDetails((prevNote) => {
-      return {
-        ...prevNote,
-        [name]: value,
-      };
-    });
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setLoading(false);
+          setAlert({
+            open: true,
+            message: "Message sent successfully",
+            backgroungColor: "#4BB543",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          setAlert({
+            open: true,
+            message: "Something Went Wrong",
+            backgroungColor: "#FF0000",
+          });
+        }
+      );
+    e.target.reset();
   }
-
-  // Initialize Formspree (A third party app for sending emails), set your formspree endpoint inside the useForm()
-  const [state, handleSubmit] = useForm("xnqloeyg");
 
   return (
     <section className="contact section" id="contact">
@@ -35,6 +61,19 @@ function Contact({ themeIcon }) {
         Get in touch
       </h2>
       <span className="sectionSubtitle">I will be glad to hear from you</span>
+
+      <Snackbar
+        open={alert.open}
+        message={alert.message}
+        ContentProps={{ style: { backgroundColor: alert.backgroungColor } }}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "center",
+        }}
+        autoHideDuration={6000}
+        onClose={() => setAlert({ ...alert, open: false })}
+        autoHideDuration={4000}
+      />
 
       {/* loops through all the conact details in data.js file and display them here  */}
       <div className="contactContainer container grid">
@@ -57,7 +96,7 @@ function Contact({ themeIcon }) {
         </div>
 
         {/* Contact form. The handleSubmit function is from formspree. */}
-        <form onSubmit={handleSubmit} className="contactForm grid">
+        <form onSubmit={sendEmail} className="contactForm grid">
           <div className="contactInputs grid">
             <div
               className={themeIcon ? "contactContentDark" : "contactContent"}
@@ -65,20 +104,7 @@ function Contact({ themeIcon }) {
               <label htmlFor="name" className="contactLabel">
                 Name
               </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={contactDetails.name}
-                onChange={handleChange}
-                required
-              />
-              {/* formspree validations */}
-              <ValidationError
-                prefix="Name"
-                field="name"
-                errors={state.errors}
-              />
+              <input type="text" id="name" name="name" required />
             </div>
 
             <div
@@ -87,74 +113,30 @@ function Contact({ themeIcon }) {
               <label htmlFor="email" className="contactLabel">
                 Email
               </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={contactDetails.email}
-                onChange={handleChange}
-                required
-              />
-              <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
-              />
+              <input type="email" id="email" name="email" required />
             </div>
           </div>
           <div className={themeIcon ? "contactContentDark" : "contactContent"}>
             <label htmlFor="project" className="contactLabel">
               Subject
             </label>
-            <input
-              type="text"
-              id="project"
-              name="subject"
-              value={contactDetails.subject}
-              onChange={handleChange}
-              required
-            />
-            <ValidationError
-              prefix="Subject"
-              field="subject"
-              errors={state.errors}
-            />
+            <input type="text" id="project" name="subject" required />
           </div>
+
           <div className={themeIcon ? "contactContentDark" : "contactContent"}>
             <label htmlFor="message" className="contactLabel">
               Message
             </label>
-            <textarea
-              name="message"
-              id="message"
-              cols="0"
-              rows="7"
-              value={contactDetails.message}
-              onChange={handleChange}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
+            <textarea name="message" id="message" cols="0" rows="7" required />
           </div>
 
-          <button type="submit" disabled={state.submitting}>
-            Submit Message <UilMessage size="18" className="messageIcon" />
+          <button type="submit">
+            {loading ? (
+              <CircularProgress color="#fff" size={25} />
+            ) : (
+              buttonContent
+            )}
           </button>
-
-          {/* if the form is sent successfully, give the sender a thank you message. Then setTimeout and clear the values  */}
-          {state.succeeded && <p>Thanks for your meesage!</p>}
-          {state.succeeded &&
-            setTimeout(() => {
-              setContactDetails({
-                name: "",
-                email: "",
-                subject: "",
-                message: "",
-              });
-            }, 1000)}
         </form>
       </div>
     </section>
