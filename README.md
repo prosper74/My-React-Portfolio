@@ -9,6 +9,7 @@ A simple react js portfolio app
 Clone the repository and cd into the project directory  
 Run `npm install`  
 To run locally, run `npm start`
+To use the contact form, create an account with emailjs, set up your account and pass the required ID's into the `sendEmail` function in `Contact.jsx`
 To deploy, run `npm run build`
 
 ## Built With

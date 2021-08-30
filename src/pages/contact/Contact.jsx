@@ -5,25 +5,33 @@ import { data } from "./data";
 import emailjs from "emailjs-com";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Snackbar from "@material-ui/core/Snackbar";
+import { Component } from "react";
+import { id } from "postcss-selector-parser";
 
 function Contact({ themeIcon }) {
+  // The content of the button element
   const buttonContent = (
     <React.Fragment>
       Submit Message <UilMessage size="18" className="messageIcon" />
     </React.Fragment>
   );
 
+  // This state handles the form submit status
   const [loading, setLoading] = useState(false);
+
+  // This state handles the material UI <Snackbar> Component. Display success or failure of the submitted form
   const [alert, setAlert] = useState({
     open: false,
     message: "",
     backgroungColor: "",
   });
 
+  // Emailjs function. To send the form to my email
   function sendEmail(e) {
     e.preventDefault();
     setLoading(true);
 
+    // Set your emailjs service id, template id and app id here
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -62,6 +70,7 @@ function Contact({ themeIcon }) {
       </h2>
       <span className="sectionSubtitle">I will be glad to hear from you</span>
 
+      {/* Display the Snackbar component if the form is successful or if there was an error  */}
       <Snackbar
         open={alert.open}
         message={alert.message}
@@ -95,7 +104,7 @@ function Contact({ themeIcon }) {
           ))}
         </div>
 
-        {/* Contact form. The handleSubmit function is from formspree. */}
+        {/* Contact form. The sendEmail function is from Emailjs. */}
         <form onSubmit={sendEmail} className="contactForm grid">
           <div className="contactInputs grid">
             <div
