@@ -16,7 +16,6 @@ function About({ themeIcon }) {
       <span className="sectionSubtitle">My Introduction</span>
 
       <div className="aboutContainer container grid">
-        {/* <img src="assets/aboutImg.svg" alt="" className="aboutImg" /> */}
 
         <span className="aboutDescription">
           <p>

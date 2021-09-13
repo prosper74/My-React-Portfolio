@@ -58,6 +58,7 @@ function Skills({ themeIcon }) {
                 >
                   HTML/CSS
                 </h3>
+                {/* Uncomment this code if you want the skills level bar */}
                 {/* <div className="skillBar">
                   <span className="skillPerc skillHtml"></span>
                 </div> */}

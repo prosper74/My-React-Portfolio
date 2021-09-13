@@ -21,6 +21,7 @@ To deploy, run `npm run build`
 - SCSS - For Styling
 - Material Ui icons and Iconscout Icons
 - iTyped - For the text animation
+- EmailJS - For sending form data
 
 ## Link
 

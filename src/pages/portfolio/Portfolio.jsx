@@ -33,7 +33,7 @@ function Portfolio({ themeIcon }) {
           <Swiper
             effect={"coverflow"}
             loop={true}
-            grabCursor={true}            
+            grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
             coverflowEffect={{

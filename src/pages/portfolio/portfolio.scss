@@ -48,7 +48,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   transition: all 1s ease;
-  // margin-bottom: 2.5rem;
 
   .btnIcon {
     margin-left: 4px;
@@ -77,7 +76,7 @@
   height: 450px !important;
 }
 
- .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   background-color: $firstColor !important;
 }
 

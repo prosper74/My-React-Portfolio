@@ -80,8 +80,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: $normalFontSize;
-  // background-color: $secondColor;
-  // color: $textColor;
 }
 
 .lightTheme {
@@ -181,16 +179,16 @@ img {
   transition: 0.5s;
 }
 
-// Scroll Bar styles 
+// Scroll Bar styles
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
   background-color: $textDark;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: $firstColor;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   &:hover {
     background-color: $secondColor;

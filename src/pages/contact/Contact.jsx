@@ -5,8 +5,6 @@ import { data } from "./data";
 import emailjs from "emailjs-com";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Snackbar from "@material-ui/core/Snackbar";
-import { Component } from "react";
-import { id } from "postcss-selector-parser";
 
 function Contact({ themeIcon }) {
   // The content of the button element

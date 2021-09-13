@@ -23,26 +23,10 @@ export const otherSkils = [
     id: 6,
     name: "Material UI",
   },
-  // {
-  //   id: 8,
-  //   name: "Swagger",
-  // },
-  // {
-  //   id: 9,
-  //   name: "Docker",
-  // },
-  // {
-  //   id: 10,
-  //   name: "RabbitMQ",
-  // },
   {
     id: 11,
     name: "Redux",
   },
-  // {
-  //   id: 12,
-  //   name: "Elastic Search",
-  // },
   {
     id: 13,
     name: "Wordpress",

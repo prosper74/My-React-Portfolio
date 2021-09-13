@@ -4,6 +4,10 @@
   margin-bottom: $mb075;
   transition: all 0.9s ease;
 
+  p {
+    line-height: 1.5;
+  }
+
   .readMore {
     color: $firstColor;
     cursor: pointer;
@@ -15,17 +19,8 @@
   }
 }
 
-.aboutInfo {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: space-evenly;
-  // margin-bottom: $mb1;
-}
-
 .aboutInfoCount {
   display: flex;
-  // flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: $mb1;
@@ -57,7 +52,6 @@
   align-items: center;
   justify-content: center;
   padding: 8px 10px;
-  // justify-content: center;
   width: 180px;
   background-color: $firstColor;
   color: white;
@@ -94,5 +88,4 @@
   .aboutInfo {
     justify-content: space-between;
   }
-
 }
