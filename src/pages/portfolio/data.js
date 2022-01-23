@@ -20,7 +20,7 @@ export const data = [
     img: "assets/tantalizers.png",
     title: "The Tantalizers",
     subtitle: "Client Project",
-    desc: "A restaurant website, based in Canada. People can view their menu, services and portfolio. book or order for products. and make online payment. Built with wordpress",
+    desc: "A restaurant website with some cool features. Built with wordpress",
     link: "https://thetantalizersca.com/",
   },
   {
@@ -28,7 +28,7 @@ export const data = [
     img: "assets/reactportfolio.jpg",
     title: "React Portfolio",
     subtitle: "Personal Project",
-    desc: "A simple react portfolio app with a lot of features. Used few libraries for the app. I decided to build this portfolio to learn a lot of features without using too many third party libraries",
+    desc: "A simple react portfolio app with a cool features and less libraries. React is really cool!!!",
     link: "https://dr0eu.csb.app/",
   },
   {
@@ -36,7 +36,7 @@ export const data = [
     img: "assets/chappelle.jpg",
     title: "Chappelle Daycare",
     subtitle: "Client Project",
-    desc: "A Daycare website. Features online booking, blog, PTA section, interactive multi-step form and a beautiful responsive design. Built with wordpress",
+    desc: "A Daycare website with a lot of features like online booking, blog, PTA section, etc. Built with wordpress",
     link: "https://chappelledaycare.ca/",
   },
   {
@@ -44,7 +44,7 @@ export const data = [
     img: "assets/gatsby.jpg",
     title: "Gatsby Portfolio",
     subtitle: "Personal Project",
-    desc: "A simple website with blog. This is my first Gatsby.js project. In this project, I implemented features like Dynamic page generation, Page and Static Query, Image optimization etc",
+    desc: "My first Gatsby.js project. In this project, I implemented features like Dynamic page generation, Page and Static Query, Image optimization etc",
     link: "https://gatsbyappbyprosper.netlify.app/",
   },
   {
@@ -54,5 +54,13 @@ export const data = [
     subtitle: "Client Project",
     desc: "GT African mart is full e-commerce project. with a lot of features like payment, authentication, security etc. Built with wordpress",
     link: "https://gtafricanmart.ca/",
+  },
+  {
+    id: 7,
+    img: "assets/loctech.png",
+    title: "Loctech",
+    subtitle: "Client Project",
+    desc: "Loctech is an eLearning app built with Gatsby JS (Frontend) and Strapi (Backend)",
+    link: "https://www.loctechng.com/",
   },
 ];

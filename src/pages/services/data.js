@@ -39,7 +39,7 @@ export const data = [
       },
       {
         id: 2,
-        service: "Develope the backend using Node js/Express js",
+        service: "Develop the backend using Node js/Express js",
       },
       {
         id: 3,
@@ -60,7 +60,7 @@ export const data = [
     services: [
       {
         id: 1,
-        service: "Can run unix, Jest, E2E and cypress tests",
+        service: "I can run unit test with Jest, E2E test with cypress",
       },
       {
         id: 2,

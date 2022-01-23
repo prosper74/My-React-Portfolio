@@ -70,7 +70,7 @@ function Home({ themeIcon }) {
             {/* Name and introduction */}
             <div className="home__data">
               <h1 className={themeIcon ? "homeTitleDark" : "homeTitle"}>
-                Hi, <br /> I'm Prosper Atu
+                Hi, I'm <br /> Prosper Atu
               </h1>
               <h3
                 className={

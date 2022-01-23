@@ -152,7 +152,7 @@ function Services({ themeIcon }) {
                 </li>
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  Develope the backend using Node js/Express js
+                  Develop the backend using Node js/Express js
                 </li>
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I
@@ -215,7 +215,7 @@ function Services({ themeIcon }) {
               <ul className="modalServices grid">
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I can
-                  run unix, Jest, E2E and cypress tests
+                  run unit test with Jest, E2E test with cypress
                 </li>
                 <li className="modalService">
                   <UilCheckCircle size="18" className="modalServiceIcon" />I

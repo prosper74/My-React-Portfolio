@@ -8,8 +8,12 @@ function Footer() {
     <footer className="footer section container">
       <div> &copy; 2021. Learning in Progress </div>
       <div>
-        <UilGithub size="18" className="githubIcon" />{" "}
-        <UilLinkedin size="18" className="linkedinIcon" />{" "}
+        <a href="https://github.com/prosper74" alt="github" target="_blank">
+          <UilGithub size="18" className="githubIcon" />
+        </a>
+        <a href="https://github.com/prosper74" alt="linkedin" target="_blank">
+          <UilLinkedin size="18" className="linkedinIcon" />
+        </a>
       </div>
     </footer>
   );
