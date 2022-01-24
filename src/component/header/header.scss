@@ -34,10 +34,7 @@
 .navToggle {
   color: $titleColor;
   font-weight: $fontMedium;
-  font-size: 1rem;
-}
-
-.nav__logo:hover {
+  font-size: 1.8rem;
   color: $firstColor;
 }
 
@@ -149,7 +146,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .header {    
+  .header {
     padding: 0;
-  }  
+  }
 }

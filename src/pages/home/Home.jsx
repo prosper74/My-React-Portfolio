@@ -83,9 +83,14 @@ function Home({ themeIcon }) {
                 I have high level experience in frontend/backend development and
                 content creation
               </p>
-              <a href="#contact" className="button">
+              <a
+                href="https://prosper-blog.netlify.app/"
+                alt="My Blog"
+                target="_blank"
+                className="button"
+              >
                 <div className="myButton">
-                  Contact Me
+                  My Blog
                   <UilMessage size="20" className="contactIcon" />
                 </div>
               </a>
