@@ -80,8 +80,9 @@ function Home({ themeIcon }) {
                 A <span ref={textRef}></span>
               </h3>
               <p className="description">
-                I have high level experience in frontend/backend development and
-                content creation
+                I have high level experience in frontend, basic backend
+                development experience, a content creator, and currently
+                learning Blockchain (dApps)...
               </p>
               <a
                 href="https://prosper-blog.netlify.app/"
