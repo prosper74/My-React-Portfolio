@@ -37,11 +37,6 @@ function Header({ menuOpen, setMenuOpen, themeIcon, setThemeIcon }) {
           <div className={"navMenu " + (menuOpen && "show__menu")}>
             <ul className="navList" onClick={() => setMenuOpen(false)}>
               <li className="nav__item">
-                <a href="#home" className="navLink">
-                  <UilHome size="18" className="navIcon" /> Home
-                </a>
-              </li>
-              <li className="nav__item">
                 <a href="#about" className="navLink">
                   <UilUser size="18" className="navIcon" /> About
                 </a>
