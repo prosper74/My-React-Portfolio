@@ -43,4 +43,8 @@ export const otherSkils = [
     id: 16,
     name: "Corel Draw",
   },
+  {
+    id: 17,
+    name: "TypeScript",
+  },
 ];

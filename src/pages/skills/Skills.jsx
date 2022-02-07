@@ -43,7 +43,7 @@ function Skills({ themeIcon }) {
               >
                 Frontend Developer
               </h1>
-              <span className="skillsSubtitle">9+ Months experience</span>
+              <span className="skillsSubtitle">1+ Year(s) experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -146,7 +146,7 @@ function Skills({ themeIcon }) {
               >
                 Backend Developer
               </h1>
-              <span className="skillsSubtitle">7+ Months experience</span>
+              <span className="skillsSubtitle">1+ Year(s) experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>

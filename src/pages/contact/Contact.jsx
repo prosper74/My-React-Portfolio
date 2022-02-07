@@ -96,7 +96,19 @@ function Contact({ themeIcon }) {
                 >
                   {d.contactTitle}
                 </h3>
-                <span className="contactDesc">{d.contactDesc}</span>
+                {d.id === 1 ? (
+                  <a href="tel:+2348034285512">
+                    <span className="contactDesc">{d.contactDesc}</span>
+                  </a>
+                ) : d.id === 2 ? (
+                  <a href="mailto:atu.prosper@gmail.com">
+                    <span className="contactDesc">{d.contactDesc}</span>
+                  </a>
+                ) : (
+                  <a href="https://twitter.com/prosperjohnson" target="_blank">
+                    <span className="contactDesc">{d.contactDesc}</span>
+                  </a>
+                )}
               </div>
             </div>
           ))}
