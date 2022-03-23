@@ -13,7 +13,7 @@ export const data = [
     title: "Safe Haven",
     subtitle: "Personal Project",
     desc: "A real estate web app, built with NextJS and Strapi (for backend)",
-    link: "https://prosper-safe-haven.netlify.app/",
+    link: "https://safe-haven-fe.vercel.app/",
   },
   {
     id: 3,
