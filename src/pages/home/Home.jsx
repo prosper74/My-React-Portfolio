@@ -14,18 +14,13 @@ import { UilMessage } from "@iconscout/react-unicons";
 function Home({ themeIcon }) {
   const textRef = useRef();
 
-  // This is where we initialize the text animation from iTyped.js library. We can set the strings we want to animate in the "strings array"
+  // This is where I initialize the text animation from iTyped.js library. We can set the strings we want to animate in the "strings array"
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
       backSpeed: 60,
       backDelay: 2000,
-      strings: [
-        "Software Engineer",
-        "Freelance Developer",
-        "Freelance Designer",
-        "Content Creator",
-      ],
+      strings: ["Software Engineer", "Frontend Developer", "Content Creator"],
     });
   }, []);
 
@@ -81,8 +76,8 @@ function Home({ themeIcon }) {
               </h3>
               <p className="description">
                 I have high level experience in frontend, basic backend
-                development experience, a content creator, and currently
-                learning Blockchain (dApps)...
+                development experience, mastering technical writing, and
+                currently learning Blockchain (dApps)...
               </p>
               <a
                 href="https://prosper-blog.netlify.app/"

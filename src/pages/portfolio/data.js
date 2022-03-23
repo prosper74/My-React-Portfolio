@@ -4,7 +4,7 @@ export const data = [
     img: "assets/githubProfiler.jpg",
     title: "Github Profiler",
     subtitle: "Personal Project",
-    desc: "display github user in a beautiful UI. The project is aimed at learning how to consume third party API and use the returned data in my React JS or Next JS app",
+    desc: "Displays github user's profile in a beautiful UI. Consumed third party API (Github)",
     link: "https://githubprofilebyprosper.netlify.app/",
   },
   {
@@ -44,7 +44,7 @@ export const data = [
     img: "assets/gatsby.jpg",
     title: "Gatsby Portfolio",
     subtitle: "Personal Project",
-    desc: "My first Gatsby.js project. In this project, I implemented features like Dynamic page generation, Page and Static Query, Image optimization etc",
+    desc: "Features Dynamic page generation, Page and Static Query, Image optimization etc",
     link: "https://gatsbyappbyprosper.netlify.app/",
   },
   {
