@@ -14,10 +14,10 @@ To deploy, run `npm run build`
 
 ## Built With
 
-- React - For Layout
-- React Router Dom - For Routing
+- React
+- React Router Dom
 - Swipper js - For the sliders
-- React hook form - For the form
+- React hook form
 - SCSS - For Styling
 - Material Ui icons and Iconscout Icons
 - iTyped - For the text animation
