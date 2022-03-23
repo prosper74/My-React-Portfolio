@@ -9,11 +9,11 @@ export const data = [
   },
   {
     id: 2,
-    img: "assets/punterscompanion.png",
-    title: "Punters Companion",
-    subtitle: "Client Project",
-    desc: "A sports betting website, where people subscribe, invest, refer people and earn. this site was built with wordpress",
-    link: "https://punterscompanion.com/",
+    img: "assets/safe_haven.jpg",
+    title: "Safe Haven",
+    subtitle: "Personal Project",
+    desc: "A real estate web app, built with NextJS and Strapi (for backend)",
+    link: "https://prosper-safe-haven.netlify.app/",
   },
   {
     id: 3,
