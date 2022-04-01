@@ -76,8 +76,7 @@ function Home({ themeIcon }) {
               </h3>
               <p className="description">
                 I have high level experience in frontend, basic backend
-                development experience, mastering technical writing, and
-                currently learning Blockchain (dApps)...
+                development experience, mastering technical writing...
               </p>
               <a
                 href="https://prosper-blog.netlify.app/"
