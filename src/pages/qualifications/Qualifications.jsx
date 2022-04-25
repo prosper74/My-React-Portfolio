@@ -96,7 +96,7 @@ function Qualifications({ themeIcon }) {
                 <span className="quaSubtitle">Metrovatech, Nigeria</span>
                 <div className="quaCalendar">
                   <UilCalendarAlt size="15" className="calIcon" />
-                  2020 - 2021
+                  2020 - 2022
                 </div>
               </div>
 

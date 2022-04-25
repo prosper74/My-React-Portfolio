@@ -59,7 +59,7 @@ function About({ themeIcon }) {
                     : "aboutInfoTitle"
                 }
               >
-                02+
+                04+
               </span>
               <span className="aboutInfoName">
                 Years <br />

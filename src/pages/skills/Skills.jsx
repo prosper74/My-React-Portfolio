@@ -43,7 +43,7 @@ function Skills({ themeIcon }) {
               >
                 Frontend Developer
               </h1>
-              <span className="skillsSubtitle">1+ Year(s) experience</span>
+              <span className="skillsSubtitle">3+ Year(s) experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -146,7 +146,7 @@ function Skills({ themeIcon }) {
               >
                 Backend Developer
               </h1>
-              <span className="skillsSubtitle">1+ Year(s) experience</span>
+              <span className="skillsSubtitle">3+ Year(s) experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -164,6 +164,21 @@ function Skills({ themeIcon }) {
               </div>
               {/* <div className="skillBar">
                 <span className="skillPerc skillNode"></span>
+              </div> */}
+            </div>
+
+            <div className="skillsData">
+              <div className="skillsTitle">
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Strapi
+                </h3>
+              </div>
+              {/* <div className="skillBar">
+                <span className="skillPerc skillFirebase"></span>
               </div> */}
             </div>
 
@@ -203,7 +218,7 @@ function Skills({ themeIcon }) {
               >
                 Database
               </h1>
-              <span className="skillsSubtitle">7+ months experience</span>
+              <span className="skillsSubtitle">3+ months experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
