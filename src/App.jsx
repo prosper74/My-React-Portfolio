@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./styles.scss";
-import Header from "./component/header/Header";
+import HashLoader from "react-spinners/HashLoader";
+import { UilArrowUp } from "@iconscout/react-unicons";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Skills from "./pages/skills/Skills";
@@ -9,9 +9,9 @@ import Qualifications from "./pages/qualifications/Qualifications";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Testimonials from "./pages/testimnoials/Testimonials";
 import Contact from "./pages/contact/Contact";
+import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
-import { UilArrowUp } from "@iconscout/react-unicons";
-import HashLoader from "react-spinners/HashLoader";
+import "./styles.scss";
 
 function App() {
   let [loading, setLoading] = useState(false);
@@ -44,7 +44,7 @@ function App() {
           <HashLoader color={"#9932cc"} loading={loading} size={60} />
         </div>
       ) : (
-        <div>
+        <>
           <Header
             menuOpen={menuOpen}
             setMenuOpen={setMenuOpen}
@@ -68,7 +68,7 @@ function App() {
               <UilArrowUp size="20" className="scrollupIcon" />
             </a>
           </main>
-        </div>
+        </>
       )}
     </div>
   );

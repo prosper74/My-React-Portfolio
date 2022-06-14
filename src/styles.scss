@@ -146,9 +146,8 @@ img {
 
 /* Layout */
 .container {
-  max-width: 768px;
-  margin-left: $mb15;
-  margin-right: $mb15;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .grid {
@@ -197,14 +196,13 @@ img {
 
 @media screen and (max-width: 350px) {
   .container {
-    margin-left: $mb1;
-    margin-right: $mb1;
+    max-width: 90%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    margin: 0 auto;
+    max-width: 80%;
   }
 
   body {
@@ -222,7 +220,6 @@ img {
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 70%;
   }
 }

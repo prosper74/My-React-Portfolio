@@ -20,7 +20,12 @@ function Home({ themeIcon }) {
       showCursor: true,
       backSpeed: 60,
       backDelay: 2000,
-      strings: ["Software Engineer", "Frontend Developer", "Content Creator"],
+      strings: [
+        "Frontend Developer",
+        "Graphics Designer",
+        "WordPress Developer",
+        "Technical Writer",
+      ],
     });
   }, []);
 
@@ -65,7 +70,7 @@ function Home({ themeIcon }) {
             {/* Name and introduction */}
             <div className="home__data">
               <h1 className={themeIcon ? "homeTitleDark" : "homeTitle"}>
-                Hi, I'm <br /> Prosper Atu
+                <span>Hi, I'm</span> <br /> Prosper Atu
               </h1>
               <h3
                 className={
@@ -75,8 +80,11 @@ function Home({ themeIcon }) {
                 A <span ref={textRef}></span>
               </h3>
               <p className="description">
-                I have high level experience in frontend, basic backend
-                development experience, mastering technical writing...
+                I have over four (4) years experience as a WordPress Developer
+                and Graphics Designer. I also have over one (2) year experience
+                building the web using ReactJS, NextJS and GatsbyJS, and I have
+                also done some backend development using ExpressJS and
+                StrapiCMS. I also write about my experience as I learn and build.
               </p>
               <a
                 href="https://prosper-blog.netlify.app/"
@@ -85,7 +93,7 @@ function Home({ themeIcon }) {
                 className="button"
               >
                 <div className="myButton">
-                  My Blog
+                  Checkout My Blog
                   <UilMessage size="20" className="contactIcon" />
                 </div>
               </a>

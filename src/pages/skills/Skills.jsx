@@ -41,9 +41,9 @@ function Skills({ themeIcon }) {
                   themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
                 }
               >
-                Frontend Developer
+                Frontend Development
               </h1>
-              <span className="skillsSubtitle">3+ Year(s) experience</span>
+              <span className="skillsSubtitle">2+ Year(s) experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -56,7 +56,7 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  HTML/CSS
+                  HTML/CSS/JavaScript
                 </h3>
                 {/* Uncomment this code if you want the skills level bar */}
                 {/* <div className="skillBar">
@@ -72,22 +72,7 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  Javascript
-                </h3>
-                {/* <div className="skillBar">
-                  <span className="skillPerc skillJavascript"></span>
-                </div> */}
-              </div>
-            </div>
-
-            <div className="skillsData">
-              <div className="skillsTitle">
-                <h3
-                  className={
-                    themeIcon ? "skillName skillNameDark" : "skillName"
-                  }
-                >
-                  React JS
+                  SCSS, Material-UI, TailwindCSS
                 </h3>
                 {/* <div className="skillBar">
                   <span className="skillPerc skillReact"></span>
@@ -102,25 +87,10 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  Next JS
+                  ReactJS, GatsbyJS, NextJS
                 </h3>
                 {/* <div className="skillBar">
                   <span className="skillPerc skillReact"></span>
-                </div> */}
-              </div>
-            </div>
-
-            <div className="skillsData">
-              <div className="skillsTitle">
-                <h3
-                  className={
-                    themeIcon ? "skillName skillNameDark" : "skillName"
-                  }
-                >
-                  Gatsby JS
-                </h3>
-                {/* <div className="skillBar">
-                  <span className="skillPerc skillGatsby"></span>
                 </div> */}
               </div>
             </div>
@@ -144,9 +114,9 @@ function Skills({ themeIcon }) {
                   themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
                 }
               >
-                Backend Developer
+                Backend Development
               </h1>
-              <span className="skillsSubtitle">3+ Year(s) experience</span>
+              <span className="skillsSubtitle">2+ Year(s) experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -159,7 +129,7 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  Node Js/Express JS
+                  NodeJs/ExpressJS
                 </h3>
               </div>
               {/* <div className="skillBar">
@@ -174,7 +144,7 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  Strapi
+                  StrapiCMS, Headless WordPress
                 </h3>
               </div>
               {/* <div className="skillBar">
@@ -189,7 +159,7 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  Firebase
+                  Firebase, MongoDB, PostgreSQL, MySQL
                 </h3>
               </div>
               {/* <div className="skillBar">
@@ -216,9 +186,9 @@ function Skills({ themeIcon }) {
                   themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
                 }
               >
-                Database
+                Graphics Design
               </h1>
-              <span className="skillsSubtitle">3+ months experience</span>
+              <span className="skillsSubtitle">4+ Years experience</span>
             </div>
             <UisAngleDown className="skillsArrow" />
           </div>
@@ -231,7 +201,7 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  MongoDB
+                  Adobe Photoshop
                 </h3>
               </div>
               {/* <div className="skillBar">
@@ -246,11 +216,11 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  MySQL
+                  Adobe Illustrator
                 </h3>
               </div>
               {/* <div className="skillBar">
-                <span className="skillPerc skillMysql"></span>
+                <span className="skillPerc skillPostgres"></span>
               </div> */}
             </div>
 
@@ -261,44 +231,12 @@ function Skills({ themeIcon }) {
                     themeIcon ? "skillName skillNameDark" : "skillName"
                   }
                 >
-                  PostgresSQL
+                  Corel Draw
                 </h3>
               </div>
               {/* <div className="skillBar">
-                <span className="skillPerc skillPostgres"></span>
+                <span className="skillPerc skillMysql"></span>
               </div> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Skill 4 */}
-        <div
-          className={
-            "skillsContent " + (toggleFour ? "skillsOpen" : "skillsClose")
-          }
-        >
-          <div
-            className="skillsHeader"
-            onClick={() => setToggleFour(!toggleFour)}
-          >
-            <UilBag size="30" className="skillsIcon" />
-            <div>
-              <h1
-                className={
-                  themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
-                }
-              >
-                Others
-              </h1>
-            </div>
-            <UisAngleDown size="30" className="skillsArrow" />
-          </div>
-
-          <div className="skillsData">
-            <div className="skillsList ">
-              {otherSkils.map((d) => (
-                <span key={d.id}>{d.name}</span>
-              ))}
             </div>
           </div>
         </div>

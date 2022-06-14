@@ -45,8 +45,8 @@ function Services({ themeIcon }) {
                 themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
               }
             >
-              Web App <br />
-              <span>Project Planning</span>
+              WordPress Website <br />
+              <span>Design, Hosting, SEO, Security</span>
             </h3>
           </div>
 
@@ -73,8 +73,8 @@ function Services({ themeIcon }) {
                 }
               >
                 {/* modal title  */}
-                Web App <br />
-                <span>Project Planning</span>
+                Web Design <br />
+                <span>Project Planning and Implementation</span>
               </h4>
 
               {/* close modal icon. you can also click anywhere on the page to close the modal */}
@@ -87,16 +87,20 @@ function Services({ themeIcon }) {
               {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  gather the software requiremnts and analysis
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Gather the project requirements and analyse them
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  plan the project
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Plan the data and sketch a design
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create the Architectural Pattern/Design
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Choose a theme or setup Elementor Builder if custom
+                </li>
+                <li className="modalService">
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Design, Send for review, modify and closeout project
                 </li>
               </ul>
             </div>
@@ -112,8 +116,8 @@ function Services({ themeIcon }) {
                 themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
               }
             >
-              Software Development <br />
-              <span>Frontend and Backend</span>
+              Web Development <br />
+              <span>UI Design, Frontend and Backend</span>
             </h3>
           </div>
 
@@ -147,21 +151,25 @@ function Services({ themeIcon }) {
               {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  design frontend app using React js or Next js, with typescript
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Gather project requirements and plan them
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  Develop the backend using Node js/Express js
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Create mockups if not provided and send for review
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create database models and routes (MongoDB, MySQL or
-                  PostgresSQL)
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Develop the backend (API) using NodeJS/ExpressJS or StrapiCMS
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create GraphQL and Rest APIs
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Build the User Interface using ReactJS/NextJS/GatsbyJS based
+                  on project requirements
+                </li>
+                <li className="modalService">
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Send for review and deploy when aproved
                 </li>
               </ul>
             </div>
@@ -177,8 +185,8 @@ function Services({ themeIcon }) {
                 themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
               }
             >
-              Software Testing <br />
-              <span>Frontend and Backend</span>
+              Graphics Design <br />
+              <span>Flyer, Logo, Brochure, Magazine, e.t.c</span>
             </h3>
           </div>
 
@@ -202,8 +210,8 @@ function Services({ themeIcon }) {
                   themeIcon ? "modalTitle modalTitleDark" : "modalTitle"
                 }
               >
-                Software Testing <br />
-                <span>Frontend and Backend</span>
+                Graphics Design <br />
+                <span>Branding</span>
               </h4>
               <UilTimes
                 size="18"
@@ -214,16 +222,13 @@ function Services({ themeIcon }) {
               {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I can
-                  run unit test with Jest, E2E test with cypress
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Business Branding
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create API documentation using Swagger
-                </li>
-                <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I use
-                  eslint and pretier to create clean and maintainable codes
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Design Flyer, banner, logo, Brochure, Magazine, Card, Book
+                  Cover
                 </li>
               </ul>
             </div>
@@ -239,8 +244,8 @@ function Services({ themeIcon }) {
                 themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
               }
             >
-              Software Maintenance <br />
-              <span>Version Control</span>
+              Web Maintenance <br />
+              <span>Update, SEO, Security, Design, Accessibility</span>
             </h3>
           </div>
 
@@ -265,7 +270,7 @@ function Services({ themeIcon }) {
                 }
               >
                 Software Maintenance <br />
-                <span>Version Control</span>
+                <span>Keep up to date</span>
               </h4>
               <UilTimes
                 size="18"
@@ -275,16 +280,21 @@ function Services({ themeIcon }) {
               {/* the service list inside the modal  */}
               <ul className="modalServices grid">
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I
-                  create and manage repositories, pull/merge requests, etc
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Ensure all tools are upto date and does not pose any security
+                  risk
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="18" className="modalServiceIcon" />I can
-                  create actions to test pull request before merging
+                  <UilCheckCircle size="18" className="modalServiceIcon" />
+                  Ensure site can be accessed by all users
                 </li>
                 <li className="modalService">
-                  <UilCheckCircle size="22" className="modalServiceIcon" />I can
-                  create contineous deploy version control
+                  <UilCheckCircle size="22" className="modalServiceIcon" />
+                  Ensure site ranks high on search engines
+                </li>
+                <li className="modalService">
+                  <UilCheckCircle size="22" className="modalServiceIcon" />
+                  Modify design when necessary to keep it appealing
                 </li>
               </ul>
             </div>

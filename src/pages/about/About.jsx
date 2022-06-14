@@ -16,38 +16,27 @@ function About({ themeIcon }) {
       <span className="sectionSubtitle">My Introduction</span>
 
       <div className="aboutContainer container grid">
-
-        <span className="aboutDescription">
+        <div className="aboutDescription">
           <p>
-            I am Prosper Atu. A smart-working Software Engineer with a flair for
-            creating elegant and quality solutions in the possible least amount
-            of time. I specialize in full-stack web development using
-            JavaScript. I can plan and design a good Software Architecture,
-            choosing the best Pattern(s).
+            I am Prosper Atu. A WordPress Developer, Graphics Designer and
+            Frontend Developer. I have good eye for design and I recieve lots of
+            great recommendations and reviews.
           </p>
           <br />
-          {readMore && (
-            <div className="more">
-              <p>
-                Aside coding, I also have basic knowledge of Project Management
-                (Agile, Waterfall), DevOps (Docker, Terraform, Ansible), Cloud
-                Services(AWS) and End-to-End Testing (Cypress). This is to
-                enable me understand the processes involved in building a
-                product from just an idea to a usable application.
-              </p>
-              <br />
-              <p>
-                I strive to follow best practices and use industry-standard
-                tools, including Git-Flow, Test Driven Development, Continous
-                Integration (Github Action), Linting (ESLint), Code Formatting
-                (Prettier), Package Management (NPM) and Build Tool (Webpack).
-              </p>
-            </div>
-          )}
-          <span className="readMore" onClick={() => setReadMore(!readMore)}>
-            {readMore ? <UilAngleUp /> : "Read More..."}
-          </span>
-        </span>
+          <p>
+            I strive to follow best practices and use industry-standard tools,
+            including Git-Flow, Test Driven Development, Continous Integration
+            (Github Action), Linting (ESLint), Code Formatting (Prettier),
+            Package Management (NPM) and Build Tool (Webpack).
+          </p>
+          <br />
+          <p>
+            I strive to follow best practices and use industry-standard tools,
+            including Git-Flow, Test Driven Development, Continous Integration
+            (Github Action), Linting (ESLint), Code Formatting (Prettier),
+            Package Management (NPM) and Build Tool (Webpack).
+          </p>
+        </div>
 
         <div className="aboutInfo">
           <div className="aboutInfoCount">
@@ -74,7 +63,7 @@ function About({ themeIcon }) {
                     : "aboutInfoTitle"
                 }
               >
-                10+
+                15+
               </span>
               <span className="aboutInfoName">
                 Completed <br />
@@ -96,14 +85,13 @@ function About({ themeIcon }) {
                 Worked
               </span>
             </div>
+            <a href="assets/cv/resume.pdf" className="button">
+              <div className="aboutButton">
+                Download Resume
+                <UisDownloadAlt size="20" className="downloadIcon" />
+              </div>
+            </a>
           </div>
-
-          <a href="assets/cv/resume.pdf" className="button">
-            <div className="aboutButton">
-              Download Resume
-              <UisDownloadAlt size="20" className="downloadIcon" />
-            </div>
-          </a>
         </div>
       </div>
     </section>

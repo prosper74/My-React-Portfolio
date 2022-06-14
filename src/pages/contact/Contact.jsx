@@ -77,7 +77,6 @@ function Contact({ themeIcon }) {
           vertical: "top",
           horizontal: "center",
         }}
-        autoHideDuration={6000}
         onClose={() => setAlert({ ...alert, open: false })}
         autoHideDuration={4000}
       />

@@ -33,6 +33,12 @@
 .home__data {
   grid-column: 1/3;
 
+  h1 {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
   h3 {
     span {
       color: $firstColor;
@@ -44,7 +50,7 @@
     align-items: center;
     justify-content: center;
     padding: 8px 10px;
-    width: 180px;
+    width: 230px;
     background-color: $firstColor;
     color: white;
     border-radius: 8px;

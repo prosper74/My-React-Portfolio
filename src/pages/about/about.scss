@@ -21,8 +21,10 @@
 
 .aboutInfoCount {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 100%;
   margin-bottom: $mb1;
 }
 
@@ -78,6 +80,7 @@
 
 @media screen and (min-width: 768px) {
   .aboutContainer {
+    grid-template-columns: 60% 40%;
     column-gap: 5rem;
   }
 

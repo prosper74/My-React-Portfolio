@@ -54,7 +54,7 @@ function Header({ menuOpen, setMenuOpen, themeIcon, setThemeIcon }) {
               </li>
               <li className="nav__item">
                 <a href="#portfolio" className="navLink">
-                  <UilFileInfoAlt size="18" className="navIcon" /> Portfolio
+                  <UilFileInfoAlt size="18" className="navIcon" /> Projects
                 </a>
               </li>
               <li className="nav__item">
