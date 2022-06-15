@@ -24,10 +24,8 @@ function About({ themeIcon }) {
           </p>
           <br />
           <p>
-            I strive to follow best practices and use industry-standard tools,
-            including Git-Flow, Test Driven Development, Continous Integration
-            (Github Action), Linting (ESLint), Code Formatting (Prettier),
-            Package Management (NPM) and Build Tool (Webpack).
+            I have over four (4) years experience as a Developer/Designer, building
+            solutions for clients.
           </p>
           <br />
           <p>
