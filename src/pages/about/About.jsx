@@ -24,8 +24,8 @@ function About({ themeIcon }) {
           </p>
           <br />
           <p>
-            I have over four (4) years experience as a Developer/Designer, building
-            solutions for clients.
+            I have over four (4) years experience as a Developer/Designer,
+            building solutions for clients.
           </p>
           <br />
           <p>
@@ -83,7 +83,7 @@ function About({ themeIcon }) {
                 Worked
               </span>
             </div>
-            <a href="assets/cv/resume.pdf" className="button">
+            <a href="assets/cv/resume.pdf" target="_blank" className="button">
               <div className="aboutButton">
                 Download Resume
                 <UisDownloadAlt size="20" className="downloadIcon" />
