@@ -80,11 +80,12 @@ function Home({ themeIcon }) {
                 A <span ref={textRef}></span>
               </h3>
               <p className="description">
-                I have over four (4) years experience as a WordPress Developer
-                and Graphics Designer. I also have over two (2) year experience
-                building the web using ReactJS, NextJS and GatsbyJS, and I have
-                also done some backend development using ExpressJS and
-                StrapiCMS. I also write about my experience as I learn and build.
+                I have over four (4) years of experience as a WordPress
+                Developer and Graphics Designer. I also have over two (2) year
+                of experience building the web using ReactJS, NextJS and
+                GatsbyJS, and I have also done some backend development using
+                ExpressJS and StrapiCMS. I also write about my experience as I
+                learn and build.
               </p>
               <a
                 href="https://prosper-blog.netlify.app/"
