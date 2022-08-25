@@ -58,10 +58,6 @@ function Skills({ themeIcon }) {
                 >
                   HTML/CSS/JavaScript
                 </h3>
-                {/* Uncomment this code if you want the skills level bar */}
-                {/* <div className="skillBar">
-                  <span className="skillPerc skillHtml"></span>
-                </div> */}
               </div>
             </div>
 
@@ -74,9 +70,6 @@ function Skills({ themeIcon }) {
                 >
                   SCSS, Material-UI, TailwindCSS
                 </h3>
-                {/* <div className="skillBar">
-                  <span className="skillPerc skillReact"></span>
-                </div> */}
               </div>
             </div>
 
@@ -178,6 +171,69 @@ function Skills({ themeIcon }) {
           <div
             className="skillsHeader"
             onClick={() => setToggleThree(!toggleThree)}
+          >
+            <UilDatabase size="30" className="skillsIcon" />
+            <div>
+              <h1
+                className={
+                  themeIcon ? "skillsTitle skillsTitleDark" : "skillsTitle"
+                }
+              >
+                Web Design - WordPress
+              </h1>
+              <span className="skillsSubtitle">4+ Years experience</span>
+            </div>
+            <UisAngleDown className="skillsArrow" />
+          </div>
+
+          <div className="skillsListGrid">
+            <div className="skillsData">
+              <div className="skillsTitle">
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Elementor
+                </h3>
+              </div>
+            </div>
+
+            <div className="skillsData">
+              <div className="skillsTitle">
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  WP Bakery
+                </h3>
+              </div>
+            </div>
+
+            <div className="skillsData">
+              <div className="skillsTitle">
+                <h3
+                  className={
+                    themeIcon ? "skillName skillNameDark" : "skillName"
+                  }
+                >
+                  Woocommerce, e.t.c
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Skill 4 */}
+        <div
+          className={
+            "skillsContent " + (toggleFour ? "skillsOpen" : "skillsClose")
+          }
+        >
+          <div
+            className="skillsHeader"
+            onClick={() => setToggleFour(!toggleFour)}
           >
             <UilDatabase size="30" className="skillsIcon" />
             <div>

@@ -54,10 +54,10 @@ function App() {
           <main className="main">
             <Home themeIcon={themeIcon} />
             <About themeIcon={themeIcon} />
-            <Qualifications themeIcon={themeIcon} />
             <Skills themeIcon={themeIcon} />
             <Services themeIcon={themeIcon} />
             <Portfolio themeIcon={themeIcon} />
+            <Qualifications themeIcon={themeIcon} />
             <Testimonials themeIcon={themeIcon} />
             <Contact themeIcon={themeIcon} />
             <Footer themeIcon={themeIcon} />

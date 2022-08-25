@@ -1,11 +1,11 @@
 export const data = [
   {
     id: 1,
-    img: "assets/githubProfiler.jpg",
-    title: "Github Profiler",
-    subtitle: "Personal Project",
-    desc: "Displays github user's profile in a beautiful UI. Consumed third party API (Github)",
-    link: "https://githubprofilebyprosper.netlify.app/",
+    img: "assets/loctech.png",
+    title: "Loctech",
+    subtitle: "Client Project",
+    desc: "Loctech is an e-learning app built with Gatsby JS and Strapi. ",
+    link: "https://www.loctechng.com/",
   },
   {
     id: 2,
@@ -56,11 +56,11 @@ export const data = [
     link: "https://gtafricanmart.ca/",
   },
   {
-    id: 7,
-    img: "assets/loctech.png",
-    title: "Loctech",
-    subtitle: "Client Project",
-    desc: "Loctech is an eLearning app built with Gatsby JS (Frontend) and Strapi (Backend)",
-    link: "https://www.loctechng.com/",
+    id: 8,
+    img: "assets/githubProfiler.jpg",
+    title: "Github Profiler",
+    subtitle: "Personal Project",
+    desc: "Displays github user's profile in a beautiful UI. I learnt some ReactJS concept like page routing, using axios to fetch data (consumed third party API), using Material UI, sending mails from front-end with email-js and integrating scss",
+    link: "https://githubprofilebyprosper.netlify.app/",
   },
 ];

@@ -45,7 +45,7 @@ function Services({ themeIcon }) {
                 themeIcon ? "ServicesTitle ServicesTitleDark" : "ServicesTitle"
               }
             >
-              WordPress Website <br />
+              Web Design - WordPress <br />
               <span>Design, Hosting, SEO, Security</span>
             </h3>
           </div>

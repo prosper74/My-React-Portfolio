@@ -10,10 +10,16 @@
 
 .portfolioImg {
   width: 300px;
-  height: 180px;
+  height: 160px;
   border-radius: 0.7rem;
   justify-self: center;
   object-fit: cover;
+}
+
+.portfolioData {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .portfolioTitle {
@@ -35,6 +41,7 @@
 .portfolioDesc {
   margin-bottom: $mb075;
   max-width: 300px;
+  font-size: 0.9rem;
 }
 
 .portfolioButton {
