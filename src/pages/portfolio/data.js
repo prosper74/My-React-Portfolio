@@ -4,7 +4,7 @@ export const data = [
     img: "assets/loctech.png",
     title: "Loctech",
     subtitle: "Client Project",
-    desc: "Loctech is an e-learning app built with Gatsby JS and Strapi. ",
+    desc: "Loctech is an e-learning app built with GatsbyJS and Strapi. This project exposed me to the JAMSTACK and CDN concepts, using apollo client, using gatsby plugins, understanding how gatsby cache works, setting up a PWA, using Markdown for contents and more.",
     link: "https://www.loctechng.com/",
   },
   {
@@ -12,7 +12,7 @@ export const data = [
     img: "assets/safe_haven.jpg",
     title: "Safe Haven",
     subtitle: "Personal Project",
-    desc: "A real estate web app, built with NextJS and Strapi (for backend)",
+    desc: "A real estate website, built with NextJS and Strapi. In this project I learnt how to setup NextJS with typescript, redux, tailwindcss, eslint, Jest, Prettier. I also learnt how to; write test with Jest and React testing library, use cloudinary to store and retrieve images, use zod for form validation, use NextJS static/dynamic props, and more...",
     link: "https://safe-haven-fe.vercel.app/",
   },
   {
@@ -20,7 +20,7 @@ export const data = [
     img: "assets/tantalizers.png",
     title: "The Tantalizers",
     subtitle: "Client Project",
-    desc: "A restaurant website with some cool features. Built with wordpress",
+    desc: "A restaurant website built with WordPress. Features; food ordering system, nice food menu, events and booking system.",
     link: "https://thetantalizersca.com/",
   },
   {
@@ -28,7 +28,7 @@ export const data = [
     img: "assets/reactportfolio.jpg",
     title: "React Portfolio",
     subtitle: "Personal Project",
-    desc: "A simple react portfolio app with a cool features and less libraries. React is really cool!!!",
+    desc: "A react personal portfolio website with a cool animations and smooth scroll. The goal of this project is to build a react app with less libraries and dependencies.",
     link: "https://dr0eu.csb.app/",
   },
   {
@@ -36,7 +36,7 @@ export const data = [
     img: "assets/chappelle.jpg",
     title: "Chappelle Daycare",
     subtitle: "Client Project",
-    desc: "A Daycare website with a lot of features like online booking, blog, PTA section, etc. Built with wordpress",
+    desc: "A Daycare website built with WordPress. With features like online booking, enrollment form, blog, PTA section, admission portal, programs and syllabus, and more...",
     link: "https://chappelledaycare.ca/",
   },
   {
