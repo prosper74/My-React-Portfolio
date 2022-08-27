@@ -44,7 +44,7 @@ export const data = [
     img: "assets/gatsby.jpg",
     title: "Gatsby Portfolio",
     subtitle: "Personal Project",
-    desc: "Features Dynamic page generation, Page and Static Query, Image optimization etc",
+    desc: "A simple portfolio website built with GatsbyJS. In this project I learnt how to create page template using gatsby-node.js file, how to create an infinite bubble animation with HTML/CSS/JavaScript, how to use gatsby plugins for optimization (especially the gatsby image plugins).",
     link: "https://gatsbyappbyprosper.netlify.app/",
   },
   {
