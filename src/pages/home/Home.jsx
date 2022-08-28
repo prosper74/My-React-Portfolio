@@ -88,7 +88,7 @@ function Home({ themeIcon }) {
                 learn and build.
               </p>
               <a
-                href="https://blog.atuprosper.com"
+                href="https://prosper-blog.netlify.app/"
                 alt="My Blog"
                 target="_blank"
                 className="button"
