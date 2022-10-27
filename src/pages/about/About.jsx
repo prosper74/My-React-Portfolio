@@ -18,13 +18,13 @@ function About({ themeIcon }) {
       <div className="aboutContainer container grid">
         <div className="aboutDescription">
           <p>
-            I am Prosper Atu. A WordPress Developer, Graphics Designer and
-            Frontend Developer. I have good eye for design and I recieve lots of
+            I am a Frontend Developer, WordPress Designer, Graphics
+            Designer and Mentor. I have good eye for design and I recieve lots of
             great recommendations and reviews.
           </p>
           <br />
           <p>
-            I have over four (4) years experience as a Developer/Designer,
+            I have over four (4) years of professional experience as a Developer/Designer,
             building solutions for clients.
           </p>
           <br />
